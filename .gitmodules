@@ -4,3 +4,6 @@
 [submodule "thirdparty/omt-osm-bright-gl-style"]
 	path = thirdparty/omt-osm-bright-gl-style
 	url = https://github.com/openmaptiles/osm-bright-gl-style.git
+[submodule "thirdparty/omt-fonts"]
+	path = thirdparty/omt-fonts
+	url = https://github.com/openmaptiles/fonts.git

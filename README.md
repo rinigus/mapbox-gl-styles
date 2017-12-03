@@ -4,6 +4,13 @@ Collection of Mapbox GL styles, sprites, and fonts. The styles are developed tar
 support for [OSM Scout Server](https://github.com/rinigus/osmscout-server) clients.
 
 
+# Glyphs
+
+Import fonts into SQLite database using `fontimport.py`
+script. Currently imported fonts are Noto fonts as packaged and
+patched by Klokantech at
+https://github.com/openmaptiles/fonts/tree/master/klokantechnoto
+
 # Sprites
 
 Icons are based on
