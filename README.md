@@ -9,7 +9,21 @@ support for [OSM Scout Server](https://github.com/rinigus/osmscout-server) clien
 Import fonts into SQLite database using `fontimport.py`
 script. Currently imported fonts are Noto fonts as packaged and
 patched by Klokantech at
-https://github.com/openmaptiles/fonts/tree/master/klokantechnoto
+https://github.com/openmaptiles/fonts/tree/master/klokantechnoto :
+
+```
+./fontimport.py thirdparty/omt-fonts/klokantechnoto glyphs.sqlite
+```
+
+
+As a requirement, font import requires
+[node-fontnik](https://github.com/mapbox/node-fontnik/). Install it
+with
+
+```
+npm install -g fontnik
+```
+
 
 # Sprites
 
