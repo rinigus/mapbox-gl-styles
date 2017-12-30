@@ -1,0 +1,13 @@
+{
+  "name": "mapbox-gl-styles",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "author": "rinigus https://github.com/rinigus",
+  "license": "GPL",
+  "dependencies": {
+    "less": "^2.7.3",
+    "less-plugin-variables-output": "^1.2.0",
+    "variable-replacer": "^1.5.1"
+  }
+}
