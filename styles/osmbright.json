@@ -391,65 +391,32 @@
       "source": "osmscout",
       "source-layer": "building",
       "paint": {
-        "fill-color": {
-          "base": 1,
-          "stops": [
-            [
-              15.5,
-              "#f2eae2"
-            ],
-            [
-              16,
-              "#dfdbd7"
-            ]
-          ]
-        },
-        "fill-antialias": true
-      }
-    },
-    {
-      "id": "building-top",
-      "type": "fill",
-      "source": "osmscout",
-      "source-layer": "building",
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-translate": {
-          "base": 1,
-          "stops": [
-            [
-              14,
-              [
-                0,
-                0
-              ]
-            ],
-            [
-              16,
-              [
-                -2,
-                -2
-              ]
-            ]
-          ]
-        },
-        "fill-outline-color": "#dfdbd7",
-        "fill-color": "#f2eae2",
+        "fill-color": "#EFE8E0",
         "fill-opacity": {
-          "base": 1,
           "stops": [
             [
               13,
               0
             ],
             [
-              16,
+              15,
               1
             ]
           ]
-        }
+        },
+        "fill-outline-color": {
+          "stops": [
+            [
+              14,
+              "#e6dccf"
+            ],
+            [
+              16,
+              "#decfbe"
+            ]
+          ]
+        },
+        "fill-antialias": true
       }
     },
     {
@@ -2990,209 +2957,27 @@
       }
     },
     {
-      "id": "boundary-land-level-4",
-      "type": "line",
-      "source": "osmscout",
-      "source-layer": "boundary",
-      "filter": [
-        "all",
-        [
-          "in",
-          "admin_level",
-          4,
-          6,
-          8
-        ],
-        [
-          "!=",
-          "maritime",
-          1
-        ]
-      ],
-      "layout": {
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#9e9cab",
-        "line-dasharray": [
-          3,
-          1,
-          1,
-          1
-        ],
-        "line-width": {
-          "base": 1.4,
-          "stops": [
-            [
-              4,
-              0.4
-            ],
-            [
-              5,
-              1
-            ],
-            [
-              12,
-              3
-            ]
-          ]
-        }
-      }
-    },
-    {
       "id": "boundary-land-level-2",
       "type": "line",
       "source": "osmscout",
       "source-layer": "boundary",
       "filter": [
-        "all",
-        [
-          "==",
-          "admin_level",
-          2
-        ],
-        [
-          "!=",
-          "maritime",
-          1
-        ],
-        [
-          "!=",
-          "disputed",
-          1
-        ]
+        "==",
+        "admin_level",
+        2
       ],
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "hsl(248, 7%, 66%)",
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              0.6
-            ],
-            [
-              4,
-              1.4
-            ],
-            [
-              5,
-              2
-            ],
-            [
-              12,
-              8
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "boundary-land-disputed",
-      "type": "line",
-      "source": "osmscout",
-      "source-layer": "boundary",
-      "filter": [
-        "all",
-        [
-          "!=",
-          "maritime",
-          1
-        ],
-        [
-          "==",
-          "disputed",
-          1
-        ]
-      ],
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "hsl(248, 7%, 70%)",
-        "line-dasharray": [
-          1,
-          3
-        ],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              0.6
-            ],
-            [
-              4,
-              1.4
-            ],
-            [
-              5,
-              2
-            ],
-            [
-              12,
-              8
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "boundary-water",
-      "type": "line",
-      "source": "osmscout",
-      "source-layer": "boundary",
-      "filter": [
-        "all",
-        [
-          "in",
-          "admin_level",
-          2,
-          4
-        ],
-        [
-          "==",
-          "maritime",
-          1
-        ]
-      ],
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "rgba(154, 189, 214, 1)",
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              0.6
-            ],
-            [
-              4,
-              1.4
-            ],
-            [
-              5,
-              2
-            ],
-            [
-              12,
-              8
-            ]
-          ]
-        },
+        "line-color": "#324",
+        "line-width": 0.5,
         "line-opacity": {
           "stops": [
             [
-              6,
-              0.6
+              2,
+              0.25
             ],
             [
               10,
