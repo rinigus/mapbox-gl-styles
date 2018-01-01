@@ -1,0 +1,36 @@
+#!/bin/bash
+
+set -e
+
+if [ "$#" -lt 2 ]; then
+    echo "Usage: $0 <styledir> <outputdir> [extra options for variable replacer]"
+    exit -1
+fi
+
+PATH=`npm bin`:$PATH
+
+styledir=${1%/}
+outdir=$2
+sname=$outdir/`basename $styledir`.json
+
+vname=`mktemp --suffix=.json`
+ldump=`mktemp --suffix=.json`
+stmp=`mktemp --suffix=.json`
+
+# load layers
+for layer in $(cat $styledir/layers)
+do
+  cat $styledir/$layer >> $ldump
+done
+
+# generate style
+cat $styledir/style.json | json -e "this.layers = `json -g -f $ldump`" > $stmp
+
+# load variables
+lessc --variables-output=$vname $styledir/variables.less > /dev/null
+
+# replace vars in style and write the result
+variable-replacer --data=$vname $stmp $sname "${@:3}"
+
+#rm $vname $ldump $stmp
+echo "Style written to $sname"
