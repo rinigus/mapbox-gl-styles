@@ -1,0 +1,85 @@
+[
+  {
+    "id": "water-offset",
+    "type": "fill",
+    "source": "osmscout",
+    "source-layer": "water",
+    "maxzoom": 8,
+    "filter": [
+      "==",
+      "$type",
+      "Polygon"
+    ],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-opacity": 1,
+      "fill-color": "#a0c8f0",
+      "fill-translate": {
+        "base": 1,
+        "stops": [
+          [
+            6,
+            [
+              2,
+              0
+            ]
+          ],
+          [
+            8,
+            [
+              0,
+              0
+            ]
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "water",
+    "type": "fill",
+    "source": "osmscout",
+    "source-layer": "water",
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "hsl(210, 67%, 85%)"
+    }
+  },
+  {
+    "id": "landcover-ice-shelf",
+    "type": "fill",
+    "metadata": {
+      "mapbox:group": "1444849382550.77"
+    },
+    "source": "osmscout",
+    "source-layer": "landcover",
+    "filter": [
+      "==",
+      "subclass",
+      "ice_shelf"
+    ],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "#fff",
+      "fill-opacity": {
+        "base": 1,
+        "stops": [
+          [
+            0,
+            0.9
+          ],
+          [
+            10,
+            0.3
+          ]
+        ]
+      }
+    }
+  }
+]

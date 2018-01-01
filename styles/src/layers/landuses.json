@@ -1,0 +1,186 @@
+[
+  {
+    "id": "landuse-residential",
+    "type": "fill",
+    "source": "osmscout",
+    "source-layer": "landuse",
+    "filter": [
+      "==",
+      "class",
+      "residential"
+    ],
+    "paint": {
+      "fill-color": {
+        "base": 1,
+        "stops": [
+          [
+            12,
+            "hsla(30, 19%, 90%, 0.4)"
+          ],
+          [
+            16,
+            "hsla(30, 19%, 90%, 0.2)"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "landuse-commercial",
+    "type": "fill",
+    "source": "osmscout",
+    "source-layer": "landuse",
+    "filter": [
+      "all",
+      [
+        "==",
+        "$type",
+        "Polygon"
+      ],
+      [
+        "==",
+        "class",
+        "commercial"
+      ]
+    ],
+    "paint": {
+      "fill-color": "hsla(0, 60%, 87%, 0.23)"
+    }
+  },
+  {
+    "id": "landuse-industrial",
+    "type": "fill",
+    "source": "osmscout",
+    "source-layer": "landuse",
+    "filter": [
+      "all",
+      [
+        "==",
+        "$type",
+        "Polygon"
+      ],
+      [
+        "==",
+        "class",
+        "industrial"
+      ]
+    ],
+    "paint": {
+      "fill-color": "hsla(49, 100%, 88%, 0.34)"
+    }
+  },
+  {
+    "id": "park",
+    "type": "fill",
+    "source": "osmscout",
+    "source-layer": "park",
+    "filter": [
+      "==",
+      "$type",
+      "Polygon"
+    ],
+    "paint": {
+      "fill-color": "#d8e8c8",
+      "fill-opacity": {
+        "base": 1.8,
+        "stops": [
+          [
+            9,
+            0.5
+          ],
+          [
+            12,
+            0.2
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "park-outline",
+    "type": "line",
+    "source": "osmscout",
+    "source-layer": "park",
+    "filter": [
+      "==",
+      "$type",
+      "Polygon"
+    ],
+    "layout": {},
+    "paint": {
+      "line-color": {
+        "base": 1,
+        "stops": [
+          [
+            6,
+            "hsla(96, 40%, 49%, 0.36)"
+          ],
+          [
+            8,
+            "hsla(96, 40%, 49%, 0.66)"
+          ]
+        ]
+      },
+      "line-dasharray": [
+        3,
+        3
+      ]
+    }
+  },
+  {
+    "id": "landuse-cemetery",
+    "type": "fill",
+    "source": "osmscout",
+    "source-layer": "landuse",
+    "filter": [
+      "==",
+      "class",
+      "cemetery"
+    ],
+    "paint": {
+      "fill-color": "#e0e4dd"
+    }
+  },
+  {
+    "id": "landuse-hospital",
+    "type": "fill",
+    "source": "osmscout",
+    "source-layer": "landuse",
+    "filter": [
+      "==",
+      "class",
+      "hospital"
+    ],
+    "paint": {
+      "fill-color": "#fde"
+    }
+  },
+  {
+    "id": "landuse-school",
+    "type": "fill",
+    "source": "osmscout",
+    "source-layer": "landuse",
+    "filter": [
+      "==",
+      "class",
+      "school"
+    ],
+    "paint": {
+      "fill-color": "#f0e8f8"
+    }
+  },
+  {
+    "id": "landuse-railway",
+    "type": "fill",
+    "source": "osmscout",
+    "source-layer": "landuse",
+    "filter": [
+      "==",
+      "class",
+      "railway"
+    ],
+    "paint": {
+      "fill-color": "hsla(30, 19%, 90%, 0.4)"
+    }
+  }
+]

@@ -1,2 +1,13 @@
 ../layers/background.json
 ../layers/landcover_glacier.json
+../layers/landuses.json
+../layers/landcover.json
+../layers/water-ice.json
+../layers/buildings.json
+../layers/roads.json
+../layers/boundary.json
+../layers/water-name.json
+../layers/poi.json
+../layers/highway-name.json
+../layers/place.json
+../layers/housenamenumber.json

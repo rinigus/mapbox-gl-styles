@@ -1,0 +1,318 @@
+[
+  {
+    "id": "place-other",
+    "type": "symbol",
+    "source": "osmscout",
+    "source-layer": "place_other",
+    "filter": [
+      "all"
+    ],
+    "layout": {
+      "text-letter-spacing": 0.1,
+      "text-size": {
+        "base": 1.2,
+        "stops": [
+          [
+            12,
+            10
+          ],
+          [
+            15,
+            14
+          ]
+        ]
+      },
+      "text-font": [
+        "Noto Sans Bold"
+      ],
+      "text-field": "{name}",
+      "text-transform": "uppercase",
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-width": 1.2,
+      "text-halo-color": "rgba(255,255,255,0.8)"
+    }
+  },
+  {
+    "id": "place-village",
+    "type": "symbol",
+    "source": "osmscout",
+    "source-layer": "place_village",
+    "filter": [
+      "all"
+    ],
+    "layout": {
+      "text-font": [
+        "Noto Sans Regular"
+      ],
+      "text-size": {
+        "base": 1.2,
+        "stops": [
+          [
+            10,
+            12
+          ],
+          [
+            15,
+            22
+          ]
+        ]
+      },
+      "text-field": "{name}",
+      "text-max-width": 8
+    },
+    "paint": {
+      "text-color": "#333",
+      "text-halo-width": 1.2,
+      "text-halo-color": "rgba(255,255,255,0.8)"
+    }
+  },
+  {
+    "id": "place-town",
+    "type": "symbol",
+    "source": "osmscout",
+    "source-layer": "place_town",
+    "filter": [
+      "all"
+    ],
+    "layout": {
+      "text-font": [
+        "Noto Sans Regular"
+      ],
+      "text-size": {
+        "base": 1.2,
+        "stops": [
+          [
+            10,
+            14
+          ],
+          [
+            15,
+            24
+          ]
+        ]
+      },
+      "text-field": "{name}",
+      "text-max-width": 8
+    },
+    "paint": {
+      "text-color": "#333",
+      "text-halo-width": 1.2,
+      "text-halo-color": "rgba(255,255,255,0.8)"
+    }
+  },
+  {
+    "id": "place-city",
+    "type": "symbol",
+    "source": "osmscout",
+    "source-layer": "place_city",
+    "filter": [
+      "all"
+    ],
+    "layout": {
+      "text-font": [
+        "Noto Sans Bold"
+      ],
+      "text-size": {
+        "base": 1.2,
+        "stops": [
+          [
+            7,
+            14
+          ],
+          [
+            11,
+            24
+          ]
+        ]
+      },
+      "text-field": "{name}",
+      "text-max-width": 8
+    },
+    "paint": {
+      "text-color": "#333",
+      "text-halo-width": 1.2,
+      "text-halo-color": "rgba(255,255,255,0.8)"
+    }
+  },
+  {
+    "id": "place-city-capital",
+    "type": "symbol",
+    "source": "osmscout",
+    "source-layer": "place_capital",
+    "minzoom": 0,
+    "filter": [
+      "all"
+    ],
+    "layout": {
+      "text-font": [
+        "Noto Sans Bold"
+      ],
+      "text-size": {
+        "base": 1.2,
+        "stops": [
+          [
+            7,
+            14
+          ],
+          [
+            11,
+            24
+          ]
+        ]
+      },
+      "text-field": "{name}",
+      "text-max-width": 8,
+      "icon-image": "star-11",
+      "text-offset": [
+        0.4,
+        0
+      ],
+      "icon-size": 0.8,
+      "text-anchor": "left"
+    },
+    "paint": {
+      "text-color": "#333",
+      "text-halo-width": 1.2,
+      "text-halo-color": "rgba(255,255,255,0.8)"
+    }
+  },
+  {
+    "id": "place-island",
+    "type": "symbol",
+    "source": "osmscout",
+    "source-layer": "place_island",
+    "minzoom": 8,
+    "maxzoom": 16,
+    "filter": [
+      "all"
+    ],
+    "layout": {
+      "text-font": [
+        "Noto Sans Bold"
+      ],
+      "text-field": "{name}",
+      "text-size": {
+        "stops": [
+          [
+            8,
+            11
+          ],
+          [
+            12,
+            17
+          ]
+        ]
+      },
+      "text-transform": "uppercase",
+      "text-max-width": 6.25
+    },
+    "paint": {
+      "text-halo-blur": 1,
+      "text-color": "#334",
+      "text-halo-width": 2,
+      "text-halo-color": "rgba(255,255,255,0.8)"
+    }
+  },
+  {
+    "id": "place-state",
+    "type": "symbol",
+    "source": "osmscout",
+    "source-layer": "place_state",
+    "minzoom": 5,
+    "maxzoom": 11,
+    "filter": [
+      "all"
+    ],
+    "layout": {
+      "text-font": [
+        "Noto Sans Bold"
+      ],
+      "text-field": "{name}",
+      "text-size": {
+        "stops": [
+          [
+            5,
+            11
+          ],
+          [
+            14,
+            17
+          ]
+        ]
+      },
+      "text-transform": "uppercase",
+      "text-max-width": 6.25
+    },
+    "paint": {
+      "text-halo-blur": 1,
+      "text-color": "#334",
+      "text-halo-width": 2,
+      "text-halo-color": "rgba(255,255,255,0.8)"
+    }
+  },
+  {
+    "id": "place-country",
+    "type": "symbol",
+    "source": "osmscout",
+    "source-layer": "place_country",
+    "maxzoom": 10,
+    "filter": [
+      "all"
+    ],
+    "layout": {
+      "text-font": [
+        "Noto Sans Bold"
+      ],
+      "text-field": "{name}",
+      "text-size": {
+        "stops": [
+          [
+            1,
+            11
+          ],
+          [
+            4,
+            17
+          ]
+        ]
+      },
+      "text-transform": "uppercase",
+      "text-max-width": 6.25
+    },
+    "paint": {
+      "text-halo-blur": 1,
+      "text-color": "#334",
+      "text-halo-width": 2,
+      "text-halo-color": "rgba(255,255,255,0.8)"
+    }
+  },
+  {
+    "id": "place-continent",
+    "type": "symbol",
+    "source": "osmscout",
+    "source-layer": "place_continent",
+    "minzoom": 0,
+    "maxzoom": 4,
+    "filter": [
+      "all"
+    ],
+    "layout": {
+      "text-font": [
+        "Noto Sans Bold"
+      ],
+      "text-field": "{name}",
+      "text-size": 14,
+      "text-max-width": 6.25,
+      "text-transform": "uppercase"
+    },
+    "paint": {
+      "text-halo-blur": 1,
+      "text-color": "#334",
+      "text-halo-width": 2,
+      "text-halo-color": "rgba(255,255,255,0.8)"
+    }
+  }
+]

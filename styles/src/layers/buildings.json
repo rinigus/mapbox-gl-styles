@@ -1,0 +1,69 @@
+[
+  {
+    "id": "building",
+    "type": "fill",
+    "source": "osmscout",
+    "source-layer": "building",
+    "paint": {
+      "fill-color": {
+        "base": 1,
+        "stops": [
+          [
+            15.5,
+            "#f2eae2"
+          ],
+          [
+            16,
+            "#dfdbd7"
+          ]
+        ]
+      },
+      "fill-antialias": true
+    }
+  },
+  {
+    "id": "building-top",
+    "type": "fill",
+    "source": "osmscout",
+    "source-layer": "building",
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-translate": {
+        "base": 1,
+        "stops": [
+          [
+            14,
+            [
+              0,
+              0
+            ]
+          ],
+          [
+            16,
+            [
+              -2,
+              -2
+            ]
+          ]
+        ]
+      },
+      "fill-outline-color": "#dfdbd7",
+      "fill-color": "#f2eae2",
+      "fill-opacity": {
+        "base": 1,
+        "stops": [
+          [
+            13,
+            0
+          ],
+          [
+            16,
+            1
+          ]
+        ]
+      }
+    }
+  }
+]

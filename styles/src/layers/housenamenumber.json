@@ -1,0 +1,38 @@
+[
+  {
+    "id": "housename",
+    "type": "symbol",
+    "source": "osmscout",
+    "source-layer": "housename",
+    "minzoom": 15,
+    "layout": {
+      "text-field": "{housename}",
+      "text-font": [
+        "Noto Sans Italic"
+      ],
+      "text-size": 12,
+      "icon-optional": true
+    },
+    "paint": {
+      "text-color": "#BFB9B3"
+    }
+  },
+  {
+    "id": "housenumber",
+    "type": "symbol",
+    "source": "osmscout",
+    "source-layer": "housenumber",
+    "minzoom": 18,
+    "layout": {
+      "text-field": "{housenumber}",
+      "text-font": [
+        "Noto Sans Italic"
+      ],
+      "text-size": 12,
+      "icon-optional": true
+    },
+    "paint": {
+      "text-color": "#BFB9B3"
+    }
+  }
+]

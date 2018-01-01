@@ -1,0 +1,145 @@
+[
+  {
+    "id": "poi-level-3",
+    "type": "symbol",
+    "source": "osmscout",
+    "source-layer": "poi",
+    "minzoom": 16,
+    "filter": [
+      "all",
+      [
+        "==",
+        "$type",
+        "Point"
+      ],
+      [
+        ">=",
+        "rank",
+        25
+      ],
+      [
+        "<",
+        "rank",
+        900
+      ]
+    ],
+    "layout": {
+      "text-padding": 2,
+      "text-font": [
+        "Noto Sans Bold"
+      ],
+      "text-anchor": "top",
+      "icon-image": "{symbol}-11",
+      "text-field": "{name}",
+      "text-offset": [
+        0,
+        0.6
+      ],
+      "text-size": 12,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-halo-blur": 0.5,
+      "text-color": "#666",
+      "text-halo-width": 1,
+      "text-halo-color": "#ffffff"
+    }
+  },
+  {
+    "id": "poi-level-2",
+    "type": "symbol",
+    "source": "osmscout",
+    "source-layer": "poi",
+    "minzoom": 15,
+    "filter": [
+      "all",
+      [
+        "==",
+        "$type",
+        "Point"
+      ],
+      [
+        "all",
+        [
+          "<=",
+          "rank",
+          24
+        ],
+        [
+          ">=",
+          "rank",
+          15
+        ]
+      ]
+    ],
+    "layout": {
+      "text-padding": 2,
+      "text-font": [
+        "Noto Sans Bold"
+      ],
+      "text-anchor": "top",
+      "icon-image": "{symbol}-11",
+      "text-field": "{name}",
+      "text-offset": [
+        0,
+        0.6
+      ],
+      "text-size": 12,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-halo-blur": 0.5,
+      "text-color": "#666",
+      "text-halo-width": 1,
+      "text-halo-color": "#ffffff"
+    }
+  },
+  {
+    "id": "poi-level-1",
+    "type": "symbol",
+    "source": "osmscout",
+    "source-layer": "poi",
+    "minzoom": 14,
+    "filter": [
+      "all",
+      [
+        "==",
+        "$type",
+        "Point"
+      ],
+      [
+        "all",
+        [
+          "<=",
+          "rank",
+          14
+        ],
+        [
+          "has",
+          "name"
+        ]
+      ]
+    ],
+    "layout": {
+      "text-padding": 2,
+      "text-font": [
+        "Noto Sans Bold"
+      ],
+      "text-anchor": "top",
+      "icon-image": "{symbol}-11",
+      "text-field": "{name}",
+      "text-offset": [
+        0,
+        0.6
+      ],
+      "text-size": 12,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-halo-blur": 0.5,
+      "text-color": "#666",
+      "text-halo-width": 1,
+      "text-halo-color": "#ffffff"
+    }
+  }
+]
