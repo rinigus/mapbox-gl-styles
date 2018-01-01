@@ -2,7 +2,7 @@
   {
     "id": "highway-name-path",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation_name",
     "minzoom": 15.5,
     "filter": [
@@ -40,7 +40,7 @@
   {
     "id": "highway-name-minor",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation_name",
     "minzoom": 15,
     "filter": [
@@ -88,7 +88,7 @@
   {
     "id": "highway-name-major",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation_name",
     "minzoom": 12.2,
     "filter": [
@@ -129,7 +129,7 @@
   {
     "id": "highway-shield",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation_name",
     "minzoom": 8,
     "filter": [
@@ -182,7 +182,7 @@
   {
     "id": "highway-shield-us-interstate",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation_name",
     "minzoom": 7,
     "filter": [
@@ -239,7 +239,7 @@
   {
     "id": "highway-shield-us-other",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation_name",
     "minzoom": 9,
     "filter": [

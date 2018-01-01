@@ -2,7 +2,7 @@
   {
     "id": "place-other",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "place_other",
     "filter": [
       "all"
@@ -38,7 +38,7 @@
   {
     "id": "place-village",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "place_village",
     "filter": [
       "all"
@@ -72,7 +72,7 @@
   {
     "id": "place-town",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "place_town",
     "filter": [
       "all"
@@ -106,7 +106,7 @@
   {
     "id": "place-city",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "place_city",
     "filter": [
       "all"
@@ -140,7 +140,7 @@
   {
     "id": "place-city-capital",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "place_capital",
     "minzoom": 0,
     "filter": [
@@ -182,7 +182,7 @@
   {
     "id": "place-island",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "place_island",
     "minzoom": 8,
     "maxzoom": 16,
@@ -219,7 +219,7 @@
   {
     "id": "place-state",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "place_state",
     "minzoom": 5,
     "maxzoom": 11,
@@ -256,7 +256,7 @@
   {
     "id": "place-country",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "place_country",
     "maxzoom": 10,
     "filter": [
@@ -292,7 +292,7 @@
   {
     "id": "place-continent",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "place_continent",
     "minzoom": 0,
     "maxzoom": 4,

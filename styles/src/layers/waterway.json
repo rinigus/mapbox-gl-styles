@@ -2,7 +2,7 @@
   {
     "id": "waterway-other",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "waterway",
     "filter": [
       "!in",
@@ -34,7 +34,7 @@
   {
     "id": "waterway-stream-canal",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "waterway",
     "filter": [
       "in",
@@ -65,7 +65,7 @@
   {
     "id": "waterway-river",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "waterway",
     "filter": [
       "==",

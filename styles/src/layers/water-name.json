@@ -2,7 +2,7 @@
   {
     "id": "waterway-name",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "waterway",
     "minzoom": 13,
     "filter": [
@@ -38,7 +38,7 @@
   {
     "id": "water-name-lakeline",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "water_name",
     "filter": [
       "==",
@@ -66,7 +66,7 @@
   {
     "id": "water-name-ocean",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "water_name",
     "filter": [
       "all",
@@ -102,7 +102,7 @@
   {
     "id": "water-name-other",
     "type": "symbol",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "water_name",
     "filter": [
       "all",

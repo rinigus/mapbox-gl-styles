@@ -2,7 +2,7 @@
   {
     "id": "landcover-glacier",
     "type": "fill",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "landcover",
     "filter": [
       "==",

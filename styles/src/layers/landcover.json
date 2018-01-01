@@ -2,7 +2,7 @@
   {
     "id": "landcover-wood",
     "type": "fill",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "landcover",
     "filter": [
       "==",
@@ -31,7 +31,7 @@
   {
     "id": "landcover-grass",
     "type": "fill",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "landcover",
     "filter": [
       "==",
@@ -46,7 +46,7 @@
   {
     "id": "landcover-grass-park",
     "type": "fill",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "park",
     "filter": [
       "==",

@@ -2,7 +2,7 @@
   {
     "id": "boundary-land-level-4",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "boundary",
     "filter": [
       "all",
@@ -52,7 +52,7 @@
   {
     "id": "boundary-land-level-2",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "boundary",
     "filter": [
       "all",
@@ -104,7 +104,7 @@
   {
     "id": "boundary-land-disputed",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "boundary",
     "filter": [
       "all",
@@ -155,7 +155,7 @@
   {
     "id": "boundary-water",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "boundary",
     "filter": [
       "all",

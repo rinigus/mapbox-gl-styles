@@ -2,7 +2,7 @@
   {
     "id": "landuse-residential",
     "type": "fill",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "landuse",
     "filter": [
       "==",
@@ -28,7 +28,7 @@
   {
     "id": "landuse-commercial",
     "type": "fill",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "landuse",
     "filter": [
       "all",
@@ -50,7 +50,7 @@
   {
     "id": "landuse-industrial",
     "type": "fill",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "landuse",
     "filter": [
       "all",
@@ -72,7 +72,7 @@
   {
     "id": "park",
     "type": "fill",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "park",
     "filter": [
       "==",
@@ -99,7 +99,7 @@
   {
     "id": "park-outline",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "park",
     "filter": [
       "==",
@@ -130,7 +130,7 @@
   {
     "id": "landuse-cemetery",
     "type": "fill",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "landuse",
     "filter": [
       "==",
@@ -144,7 +144,7 @@
   {
     "id": "landuse-hospital",
     "type": "fill",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "landuse",
     "filter": [
       "==",
@@ -158,7 +158,7 @@
   {
     "id": "landuse-school",
     "type": "fill",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "landuse",
     "filter": [
       "==",
@@ -172,7 +172,7 @@
   {
     "id": "landuse-railway",
     "type": "fill",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "landuse",
     "filter": [
       "==",

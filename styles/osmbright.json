@@ -5,7 +5,7 @@
     24,
     58
   ],
-  "zoom": 11,
+  "zoom": 7,
   "bearing": 0,
   "pitch": 0,
   "sources": {
@@ -20,7 +20,7 @@
   },
   "sprite": "http://HOSTNAMEPORT/v1/mbgl/sprite",
   "glyphs": "http://HOSTNAMEPORT/v1/mbgl/glyphs?stack={fontstack}&range={range}",
-  "id": "osmbright",
+  "id": "osmscout",
   "layers": [
     {
       "id": "background",

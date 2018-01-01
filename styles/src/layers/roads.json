@@ -2,7 +2,7 @@
   {
     "id": "tunnel-service-track-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -49,7 +49,7 @@
   {
     "id": "tunnel-minor-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -107,7 +107,7 @@
   {
     "id": "tunnel-secondary-tertiary-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -147,7 +147,7 @@
   {
     "id": "tunnel-trunk-primary-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -194,7 +194,7 @@
   {
     "id": "tunnel-motorway-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -245,7 +245,7 @@
   {
     "id": "tunnel-path",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -292,7 +292,7 @@
   {
     "id": "tunnel-service-track",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -335,7 +335,7 @@
   {
     "id": "tunnel-minor",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -378,7 +378,7 @@
   {
     "id": "tunnel-secondary-tertiary",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -421,7 +421,7 @@
   {
     "id": "tunnel-trunk-primary",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -464,7 +464,7 @@
   {
     "id": "tunnel-motorway",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -507,7 +507,7 @@
   {
     "id": "tunnel-railway",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -550,7 +550,7 @@
   {
     "id": "aeroway-taxiway-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "aeroway",
     "minzoom": 12,
     "filter": [
@@ -587,7 +587,7 @@
   {
     "id": "aeroway-runway-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "aeroway",
     "minzoom": 12,
     "filter": [
@@ -624,7 +624,7 @@
   {
     "id": "aeroway-area",
     "type": "fill",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "aeroway",
     "minzoom": 4,
     "filter": [
@@ -664,7 +664,7 @@
   {
     "id": "aeroway-taxiway",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "aeroway",
     "minzoom": 4,
     "filter": [
@@ -721,7 +721,7 @@
     "metadata": {
       "mapbox:group": "1444849345966.4436"
     },
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "aeroway",
     "minzoom": 4,
     "filter": [
@@ -775,7 +775,7 @@
   {
     "id": "highway-area",
     "type": "fill",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "==",
@@ -795,7 +795,7 @@
   {
     "id": "highway-motorway-link-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "minzoom": 12,
     "filter": [
@@ -845,7 +845,7 @@
   {
     "id": "highway-link-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "minzoom": 13,
     "filter": [
@@ -899,7 +899,7 @@
   {
     "id": "highway-minor-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -968,7 +968,7 @@
   {
     "id": "highway-secondary-tertiary-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -1011,7 +1011,7 @@
   {
     "id": "highway-primary-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "minzoom": 5,
     "filter": [
@@ -1073,7 +1073,7 @@
   {
     "id": "highway-trunk-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "minzoom": 5,
     "filter": [
@@ -1135,7 +1135,7 @@
   {
     "id": "highway-motorway-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "minzoom": 4,
     "filter": [
@@ -1201,7 +1201,7 @@
   {
     "id": "highway-path",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -1249,7 +1249,7 @@
   {
     "id": "highway-motorway-link",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "minzoom": 12,
     "filter": [
@@ -1298,7 +1298,7 @@
   {
     "id": "highway-link",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "minzoom": 13,
     "filter": [
@@ -1351,7 +1351,7 @@
   {
     "id": "highway-minor",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -1405,7 +1405,7 @@
   {
     "id": "highway-secondary-tertiary",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -1451,7 +1451,7 @@
   {
     "id": "highway-primary",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -1504,7 +1504,7 @@
   {
     "id": "highway-trunk",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -1557,7 +1557,7 @@
   {
     "id": "highway-motorway",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "minzoom": 5,
     "filter": [
@@ -1611,7 +1611,7 @@
   {
     "id": "railway-transit",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -1657,7 +1657,7 @@
   {
     "id": "railway-transit-hatching",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -1711,7 +1711,7 @@
   {
     "id": "railway-service",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -1753,7 +1753,7 @@
   {
     "id": "railway-service-hatching",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -1806,7 +1806,7 @@
   {
     "id": "railway",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -1858,7 +1858,7 @@
   {
     "id": "railway-hatching",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -1914,7 +1914,7 @@
   {
     "id": "bridge-motorway-link-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -1961,7 +1961,7 @@
   {
     "id": "bridge-link-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -2011,7 +2011,7 @@
   {
     "id": "bridge-secondary-tertiary-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -2051,7 +2051,7 @@
   {
     "id": "bridge-trunk-primary-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -2098,7 +2098,7 @@
   {
     "id": "bridge-motorway-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -2144,7 +2144,7 @@
   {
     "id": "bridge-path-casing",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -2187,7 +2187,7 @@
   {
     "id": "bridge-path",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -2234,7 +2234,7 @@
   {
     "id": "bridge-motorway-link",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -2280,7 +2280,7 @@
   {
     "id": "bridge-link",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -2329,7 +2329,7 @@
   {
     "id": "bridge-secondary-tertiary",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -2372,7 +2372,7 @@
   {
     "id": "bridge-trunk-primary",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -2415,7 +2415,7 @@
   {
     "id": "bridge-motorway",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -2457,7 +2457,7 @@
   {
     "id": "bridge-railway",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",
@@ -2496,7 +2496,7 @@
   {
     "id": "bridge-railway-hatching",
     "type": "line",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "transportation",
     "filter": [
       "all",

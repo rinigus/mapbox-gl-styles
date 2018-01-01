@@ -2,7 +2,7 @@
   {
     "id": "building",
     "type": "fill",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "building",
     "paint": {
       "fill-color": {
@@ -24,7 +24,7 @@
   {
     "id": "building-top",
     "type": "fill",
-    "source": "osmscout",
+    "source": "%source%",
     "source-layer": "building",
     "layout": {
       "visibility": "visible"
