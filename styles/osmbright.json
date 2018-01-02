@@ -3295,11 +3295,11 @@
           "stops": [
             [
               13,
-              12
+              10
             ],
             [
               14,
-              13
+              11
             ]
           ]
         },
@@ -3311,9 +3311,9 @@
         "text-rotation-alignment": "map"
       },
       "paint": {
-        "text-halo-color": "#f8f4f0",
-        "text-color": "hsl(30, 23%, 62%)",
-        "text-halo-width": 0.5
+        "text-halo-color": "#fff",
+        "text-color": "#777",
+        "text-halo-width": 1
       }
     },
     {
@@ -3343,11 +3343,11 @@
           "stops": [
             [
               13,
-              12
+              10
             ],
             [
               14,
-              13
+              11
             ]
           ]
         },
@@ -3359,8 +3359,8 @@
         "text-rotation-alignment": "map"
       },
       "paint": {
-        "text-halo-blur": 0.5,
-        "text-color": "#765",
+        "text-halo-color": "#fff",
+        "text-color": "#777",
         "text-halo-width": 1
       }
     },
@@ -3400,8 +3400,8 @@
         "text-rotation-alignment": "map"
       },
       "paint": {
-        "text-halo-blur": 0.5,
-        "text-color": "#765",
+        "text-halo-color": "#fff",
+        "text-color": "#777",
         "text-halo-width": 1
       }
     },
@@ -3456,7 +3456,9 @@
         "icon-size": 1,
         "text-field": "{ref}"
       },
-      "paint": {}
+      "paint": {
+        "text-color": "#000000"
+      }
     },
     {
       "id": "highway-shield-us-interstate",
@@ -3512,7 +3514,7 @@
         "text-field": "{ref}"
       },
       "paint": {
-        "text-color": "rgba(0, 0, 0, 1)"
+        "text-color": "#000000"
       }
     },
     {
@@ -3566,7 +3568,7 @@
         "text-field": "{ref}"
       },
       "paint": {
-        "text-color": "rgba(0, 0, 0, 1)"
+        "text-color": "#000000"
       }
     },
     {
