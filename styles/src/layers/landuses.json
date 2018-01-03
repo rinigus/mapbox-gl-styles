@@ -10,19 +10,7 @@
       "residential"
     ],
     "paint": {
-      "fill-color": {
-        "base": 1,
-        "stops": [
-          [
-            12,
-            "hsla(30, 19%, 90%, 0.4)"
-          ],
-          [
-            16,
-            "hsla(30, 19%, 90%, 0.2)"
-          ]
-        ]
-      }
+      "fill-color": "%residential%"
     }
   },
   {
@@ -44,7 +32,7 @@
       ]
     ],
     "paint": {
-      "fill-color": "hsla(0, 60%, 87%, 0.23)"
+      "fill-color": "%commercial%"
     }
   },
   {
@@ -66,7 +54,7 @@
       ]
     ],
     "paint": {
-      "fill-color": "hsla(49, 100%, 88%, 0.34)"
+      "fill-color": "%industrial%"
     }
   },
   {
@@ -80,7 +68,7 @@
       "Polygon"
     ],
     "paint": {
-      "fill-color": "#d8e8c8",
+      "fill-color": "%park%",
       "fill-opacity": {
         "base": 1.8,
         "stops": [
@@ -108,19 +96,7 @@
     ],
     "layout": {},
     "paint": {
-      "line-color": {
-        "base": 1,
-        "stops": [
-          [
-            6,
-            "hsla(96, 40%, 49%, 0.36)"
-          ],
-          [
-            8,
-            "hsla(96, 40%, 49%, 0.66)"
-          ]
-        ]
-      },
+      "line-color": "%park_outline%",
       "line-dasharray": [
         3,
         3
@@ -138,7 +114,7 @@
       "cemetery"
     ],
     "paint": {
-      "fill-color": "#e0e4dd"
+      "fill-color": "%cemetery%"
     }
   },
   {
@@ -152,7 +128,7 @@
       "hospital"
     ],
     "paint": {
-      "fill-color": "#fde"
+      "fill-color": "%hospital%"
     }
   },
   {
@@ -166,7 +142,7 @@
       "school"
     ],
     "paint": {
-      "fill-color": "#f0e8f8"
+      "fill-color": "%school%"
     }
   },
   {
@@ -180,7 +156,7 @@
       "railway"
     ],
     "paint": {
-      "fill-color": "hsla(30, 19%, 90%, 0.4)"
+      "fill-color": "%railway%"
     }
   }
 ]

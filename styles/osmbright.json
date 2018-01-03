@@ -43,7 +43,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#fff",
+        "fill-color": "#FFFFFF",
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -70,19 +70,7 @@
         "residential"
       ],
       "paint": {
-        "fill-color": {
-          "base": 1,
-          "stops": [
-            [
-              12,
-              "hsla(30, 19%, 90%, 0.4)"
-            ],
-            [
-              16,
-              "hsla(30, 19%, 90%, 0.2)"
-            ]
-          ]
-        }
+        "fill-color": "#f3efeb"
       }
     },
     {
@@ -104,7 +92,7 @@
         ]
       ],
       "paint": {
-        "fill-color": "hsla(0, 60%, 87%, 0.23)"
+        "fill-color": "#f1ede9"
       }
     },
     {
@@ -126,7 +114,7 @@
         ]
       ],
       "paint": {
-        "fill-color": "hsla(49, 100%, 88%, 0.34)"
+        "fill-color": "#eeeae6"
       }
     },
     {
@@ -140,7 +128,7 @@
         "Polygon"
       ],
       "paint": {
-        "fill-color": "#d8e8c8",
+        "fill-color": "#D8E8C8",
         "fill-opacity": {
           "base": 1.8,
           "stops": [
@@ -168,19 +156,7 @@
       ],
       "layout": {},
       "paint": {
-        "line-color": {
-          "base": 1,
-          "stops": [
-            [
-              6,
-              "hsla(96, 40%, 49%, 0.36)"
-            ],
-            [
-              8,
-              "hsla(96, 40%, 49%, 0.66)"
-            ]
-          ]
-        },
+        "line-color": "rgba(115, 175, 75, 0.5)",
         "line-dasharray": [
           3,
           3
@@ -198,7 +174,7 @@
         "cemetery"
       ],
       "paint": {
-        "fill-color": "#e0e4dd"
+        "fill-color": "#D6DED2"
       }
     },
     {
@@ -212,7 +188,7 @@
         "hospital"
       ],
       "paint": {
-        "fill-color": "#fde"
+        "fill-color": "#FFDDEE"
       }
     },
     {
@@ -226,7 +202,7 @@
         "school"
       ],
       "paint": {
-        "fill-color": "#f0e8f8"
+        "fill-color": "#F0E8F8"
       }
     },
     {
@@ -240,7 +216,7 @@
         "railway"
       ],
       "paint": {
-        "fill-color": "hsla(30, 19%, 90%, 0.4)"
+        "fill-color": "rgba(234, 230, 225, 0.4)"
       }
     },
     {
@@ -255,8 +231,8 @@
       ],
       "paint": {
         "fill-color": "#6a4",
+        "fill-outline-color": "rgba(0, 0, 0, 0.03)",
         "fill-opacity": 0.1,
-        "fill-outline-color": "hsla(0, 0%, 0%, 0.03)",
         "fill-antialias": {
           "base": 1,
           "stops": [
@@ -283,8 +259,7 @@
         "grass"
       ],
       "paint": {
-        "fill-color": "#d8e8c8",
-        "fill-opacity": 1
+        "fill-color": "#DEEBBA"
       }
     },
     {
@@ -298,7 +273,7 @@
         "public_park"
       ],
       "paint": {
-        "fill-color": "#d8e8c8",
+        "fill-color": "#D8E8C8",
         "fill-opacity": 0.8
       }
     },
@@ -3312,7 +3287,7 @@
       },
       "paint": {
         "text-halo-color": "#fff",
-        "text-color": "#777",
+        "text-color": "#555",
         "text-halo-width": 1
       }
     },
@@ -3360,7 +3335,7 @@
       },
       "paint": {
         "text-halo-color": "#fff",
-        "text-color": "#777",
+        "text-color": "#555",
         "text-halo-width": 1
       }
     },
@@ -3401,7 +3376,7 @@
       },
       "paint": {
         "text-halo-color": "#fff",
-        "text-color": "#777",
+        "text-color": "#555",
         "text-halo-width": 1
       }
     },
@@ -3572,149 +3547,12 @@
       }
     },
     {
-      "id": "place-other",
+      "id": "place-continent",
       "type": "symbol",
       "source": "osmscout",
-      "source-layer": "place_other",
-      "filter": [
-        "all"
-      ],
-      "layout": {
-        "text-letter-spacing": 0.1,
-        "text-size": {
-          "base": 1.2,
-          "stops": [
-            [
-              12,
-              10
-            ],
-            [
-              15,
-              14
-            ]
-          ]
-        },
-        "text-font": [
-          "Noto Sans Bold"
-        ],
-        "text-field": "{name}",
-        "text-transform": "uppercase",
-        "text-max-width": 9
-      },
-      "paint": {
-        "text-color": "#633",
-        "text-halo-width": 1.2,
-        "text-halo-color": "rgba(255,255,255,0.8)"
-      }
-    },
-    {
-      "id": "place-village",
-      "type": "symbol",
-      "source": "osmscout",
-      "source-layer": "place_village",
-      "filter": [
-        "all"
-      ],
-      "layout": {
-        "text-font": [
-          "Noto Sans Regular"
-        ],
-        "text-size": {
-          "base": 1.2,
-          "stops": [
-            [
-              10,
-              12
-            ],
-            [
-              15,
-              22
-            ]
-          ]
-        },
-        "text-field": "{name}",
-        "text-max-width": 8
-      },
-      "paint": {
-        "text-color": "#333",
-        "text-halo-width": 1.2,
-        "text-halo-color": "rgba(255,255,255,0.8)"
-      }
-    },
-    {
-      "id": "place-town",
-      "type": "symbol",
-      "source": "osmscout",
-      "source-layer": "place_town",
-      "filter": [
-        "all"
-      ],
-      "layout": {
-        "text-font": [
-          "Noto Sans Regular"
-        ],
-        "text-size": {
-          "base": 1.2,
-          "stops": [
-            [
-              10,
-              14
-            ],
-            [
-              15,
-              24
-            ]
-          ]
-        },
-        "text-field": "{name}",
-        "text-max-width": 8
-      },
-      "paint": {
-        "text-color": "#333",
-        "text-halo-width": 1.2,
-        "text-halo-color": "rgba(255,255,255,0.8)"
-      }
-    },
-    {
-      "id": "place-city",
-      "type": "symbol",
-      "source": "osmscout",
-      "source-layer": "place_city",
-      "filter": [
-        "all"
-      ],
-      "layout": {
-        "text-font": [
-          "Noto Sans Bold"
-        ],
-        "text-size": {
-          "base": 1.2,
-          "stops": [
-            [
-              7,
-              14
-            ],
-            [
-              11,
-              24
-            ]
-          ]
-        },
-        "text-field": "{name}",
-        "text-max-width": 8
-      },
-      "paint": {
-        "text-color": "#333",
-        "text-halo-width": 1.2,
-        "text-halo-color": "rgba(255,255,255,0.8)"
-      }
-    },
-    {
-      "id": "place-city-capital",
-      "type": "symbol",
-      "source": "osmscout",
-      "source-layer": "place_capital",
+      "source-layer": "place_continent",
       "minzoom": 0,
+      "maxzoom": 4,
       "filter": [
         "all"
       ],
@@ -3722,42 +3560,24 @@
         "text-font": [
           "Noto Sans Bold"
         ],
-        "text-size": {
-          "base": 1.2,
-          "stops": [
-            [
-              7,
-              14
-            ],
-            [
-              11,
-              24
-            ]
-          ]
-        },
         "text-field": "{name}",
-        "text-max-width": 8,
-        "icon-image": "star-11",
-        "text-offset": [
-          0.4,
-          0
-        ],
-        "icon-size": 0.8,
-        "text-anchor": "left"
+        "text-size": 14,
+        "text-max-width": 6.25,
+        "text-transform": "uppercase"
       },
       "paint": {
-        "text-color": "#333",
-        "text-halo-width": 1.2,
-        "text-halo-color": "rgba(255,255,255,0.8)"
+        "text-halo-blur": 1,
+        "text-color": "#435",
+        "text-halo-width": 2,
+        "text-halo-color": "rgba(255, 255, 255, 0.66)"
       }
     },
     {
-      "id": "place-island",
+      "id": "place-country",
       "type": "symbol",
       "source": "osmscout",
-      "source-layer": "place_island",
-      "minzoom": 8,
-      "maxzoom": 16,
+      "source-layer": "place_country",
+      "maxzoom": 10,
       "filter": [
         "all"
       ],
@@ -3769,23 +3589,35 @@
         "text-size": {
           "stops": [
             [
-              8,
+              3,
               11
             ],
             [
-              12,
+              7,
               17
             ]
           ]
         },
         "text-transform": "uppercase",
-        "text-max-width": 6.25
+        "text-max-width": 6.25,
+        "text-letter-spacing": {
+          "stops": [
+            [
+              3,
+              0
+            ],
+            [
+              7,
+              0.5
+            ]
+          ]
+        }
       },
       "paint": {
         "text-halo-blur": 1,
-        "text-color": "#334",
+        "text-color": "#435",
         "text-halo-width": 2,
-        "text-halo-color": "rgba(255,255,255,0.8)"
+        "text-halo-color": "rgba(255, 255, 255, 0.66)"
       }
     },
     {
@@ -3820,54 +3652,96 @@
       },
       "paint": {
         "text-halo-blur": 1,
-        "text-color": "#334",
+        "text-color": "#546",
         "text-halo-width": 2,
-        "text-halo-color": "rgba(255,255,255,0.8)"
+        "text-halo-color": "rgba(255, 255, 255, 0.66)"
       }
     },
     {
-      "id": "place-country",
+      "id": "place-city-capital",
       "type": "symbol",
       "source": "osmscout",
-      "source-layer": "place_country",
-      "maxzoom": 10,
+      "source-layer": "place_capital",
+      "minzoom": 0,
+      "maxzoom": 15,
       "filter": [
         "all"
       ],
       "layout": {
         "text-font": [
           "Noto Sans Bold"
+        ],
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [
+              7,
+              14
+            ],
+            [
+              11,
+              24
+            ]
+          ]
+        },
+        "text-field": "{name}",
+        "text-max-width": 8,
+        "icon-image": "star-11",
+        "text-offset": [
+          0.4,
+          0
+        ],
+        "icon-size": 0.8,
+        "text-anchor": "left"
+      },
+      "paint": {
+        "text-color": "#444",
+        "text-halo-width": 1.2,
+        "text-halo-color": "rgba(255, 255, 255, 0.66)"
+      }
+    },
+    {
+      "id": "place-island",
+      "type": "symbol",
+      "source": "osmscout",
+      "source-layer": "place_island",
+      "minzoom": 8,
+      "maxzoom": 16,
+      "filter": [
+        "all"
+      ],
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
         ],
         "text-field": "{name}",
         "text-size": {
           "stops": [
             [
-              1,
+              8,
               11
             ],
             [
-              4,
+              12,
               17
             ]
           ]
         },
-        "text-transform": "uppercase",
         "text-max-width": 6.25
       },
       "paint": {
         "text-halo-blur": 1,
-        "text-color": "#334",
+        "text-color": "#555",
         "text-halo-width": 2,
-        "text-halo-color": "rgba(255,255,255,0.8)"
+        "text-halo-color": "rgba(255, 255, 255, 0.66)"
       }
     },
     {
-      "id": "place-continent",
+      "id": "place-city",
       "type": "symbol",
       "source": "osmscout",
-      "source-layer": "place_continent",
-      "minzoom": 0,
-      "maxzoom": 4,
+      "source-layer": "place_city",
+      "maxzoom": 16,
       "filter": [
         "all"
       ],
@@ -3875,16 +3749,131 @@
         "text-font": [
           "Noto Sans Bold"
         ],
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [
+              7,
+              14
+            ],
+            [
+              11,
+              24
+            ]
+          ]
+        },
         "text-field": "{name}",
-        "text-size": 14,
-        "text-max-width": 6.25,
-        "text-transform": "uppercase"
+        "text-max-width": 8
       },
       "paint": {
-        "text-halo-blur": 1,
-        "text-color": "#334",
-        "text-halo-width": 2,
-        "text-halo-color": "rgba(255,255,255,0.8)"
+        "text-color": "#444",
+        "text-halo-width": 1.2,
+        "text-halo-color": "rgba(255, 255, 255, 0.66)"
+      }
+    },
+    {
+      "id": "place-town",
+      "type": "symbol",
+      "source": "osmscout",
+      "source-layer": "place_town",
+      "maxzoom": 16,
+      "filter": [
+        "all"
+      ],
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [
+              10,
+              14
+            ],
+            [
+              15,
+              24
+            ]
+          ]
+        },
+        "text-field": "{name}",
+        "text-max-width": 8
+      },
+      "paint": {
+        "text-color": "#666",
+        "text-halo-width": 1.2,
+        "text-halo-color": "rgba(255, 255, 255, 0.66)"
+      }
+    },
+    {
+      "id": "place-village",
+      "type": "symbol",
+      "source": "osmscout",
+      "source-layer": "place_village",
+      "maxzoom": 17,
+      "filter": [
+        "all"
+      ],
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [
+              10,
+              12
+            ],
+            [
+              15,
+              22
+            ]
+          ]
+        },
+        "text-field": "{name}",
+        "text-max-width": 8
+      },
+      "paint": {
+        "text-color": "#888",
+        "text-halo-width": 1.2,
+        "text-halo-color": "rgba(255, 255, 255, 0.66)"
+      }
+    },
+    {
+      "id": "place-other",
+      "type": "symbol",
+      "source": "osmscout",
+      "source-layer": "place_other",
+      "filter": [
+        "all"
+      ],
+      "layout": {
+        "text-letter-spacing": 0.1,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [
+              12,
+              10
+            ],
+            [
+              15,
+              14
+            ]
+          ]
+        },
+        "text-font": [
+          "Noto Sans Bold"
+        ],
+        "text-field": "{name}",
+        "text-max-width": 9
+      },
+      "paint": {
+        "text-color": "#888",
+        "text-halo-width": 1.2,
+        "text-halo-color": "rgba(255, 255, 255, 0.66)"
       }
     },
     {
@@ -3898,11 +3887,11 @@
         "text-font": [
           "Noto Sans Italic"
         ],
-        "text-size": 12,
+        "text-size": 10,
         "icon-optional": true
       },
       "paint": {
-        "text-color": "#BFB9B3"
+        "text-color": "#888"
       }
     },
     {
@@ -3916,11 +3905,11 @@
         "text-font": [
           "Noto Sans Italic"
         ],
-        "text-size": 12,
+        "text-size": 10,
         "icon-optional": true
       },
       "paint": {
-        "text-color": "#BFB9B3"
+        "text-color": "#888"
       }
     }
   ]

@@ -13,7 +13,7 @@
       "visibility": "visible"
     },
     "paint": {
-      "fill-color": "#fff",
+      "fill-color": "%ice%",
       "fill-opacity": {
         "base": 1,
         "stops": [

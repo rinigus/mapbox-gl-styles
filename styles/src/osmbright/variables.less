@@ -5,9 +5,17 @@
 @land:              #F8F4F0;
 @water:             #A0C8F0;
 @grass:             #DEEBBA;
+
 @park:              #D8E8C8;
+@park_outline:      hsla(96, 40%, 49%, 0.5);
+
 @cemetery:          #D6DED2;
-@wooded:            #E9EDDF;
+
+@wooded:            #6a4;
+@wooded_outline:     hsla(0, 0%, 0%, 0.03);
+@wooded_opacity:    0.1;
+
+@ice:               #FFFFFF;
 
 @building:          #EFE8E0; //#E4E0E0;
 @hospital:          #FFDDEE;
@@ -17,6 +25,7 @@
 @residential:       @land * 0.98;
 @commercial:        @land * 0.97;
 @industrial:        @land * 0.96;
+@railway:           hsla(30, 19%, 90%, 0.4);
 @parking:           #EEE;
 
 // derived colors
@@ -102,21 +111,28 @@
 @country_text:      #435;
 @country_halo:      @place_halo;
 
+@continent_text:    @country_text;
+@continent_halo:    @country_halo;
+
 @state_text:        #546;
 @state_halo:        @place_halo;
 
 @city_text:         #444;
 @city_halo:         @place_halo;
 
+@island_text:        #555;
+@island_halo:        @place_halo;
+
 @town_text:         #666;
 @town_halo:         @place_halo;
 
 @poi_text:          #888;
+@building_text:     #888;
 
 @area_text:	    @poi_text;
 @area_halo:         @place_halo;
 
-@road_text:         #777;
+@road_text:         #555;
 @road_halo:         #fff;
 @road_shield_text:  rgba(0, 0, 0, 1);
 @road_shield_text_us: rgba(0, 0, 0, 1);

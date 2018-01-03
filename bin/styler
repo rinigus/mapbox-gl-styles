@@ -15,7 +15,11 @@ sname=$outdir/`basename $styledir`.json
 
 vname=`mktemp --suffix=.json`
 ldump=`mktemp --suffix=.json`
+ldump_replaced=`mktemp --suffix=.json`
 stmp=`mktemp --suffix=.json`
+
+# load variables
+lessc --variables-output=$vname $styledir/variables.less > /dev/null
 
 # load layers
 for layer in $(cat $styledir/layers)
@@ -23,14 +27,16 @@ do
   cat $styledir/$layer >> $ldump
 done
 
-# generate style
-cat $styledir/style.json | json -e "this.layers = `json -g -f $ldump`" > $stmp
+# replace vars in style and write the result
+variable-replacer --data=$vname $ldump $ldump_replaced "${@:3}"
 
-# load variables
-lessc --variables-output=$vname $styledir/variables.less > /dev/null
+# generate style
+cat $styledir/style.json | json -e "this.layers = `json -g -f $ldump_replaced`" > $stmp
 
 # replace vars in style and write the result
 variable-replacer --data=$vname $stmp $sname "${@:3}"
 
 #rm $vname $ldump $stmp
 echo "Style written to $sname"
+
+rm $vname $ldump $ldump_replaced $stmp

@@ -10,11 +10,11 @@
       "text-font": [
         "Noto Sans Italic"
       ],
-      "text-size": 12,
+      "text-size": 10,
       "icon-optional": true
     },
     "paint": {
-      "text-color": "#BFB9B3"
+      "text-color": "%building_text%"
     }
   },
   {
@@ -28,11 +28,11 @@
       "text-font": [
         "Noto Sans Italic"
       ],
-      "text-size": 12,
+      "text-size": 10,
       "icon-optional": true
     },
     "paint": {
-      "text-color": "#BFB9B3"
+      "text-color": "%building_text%"
     }
   }
 ]
