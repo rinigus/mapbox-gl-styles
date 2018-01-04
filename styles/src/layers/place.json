@@ -73,7 +73,7 @@
     "source": "%source%",
     "source-layer": "place_state",
     "minzoom": 5,
-    "maxzoom": 11,
+    "maxzoom": 10,
     "filter": [
       "all"
     ],
@@ -94,7 +94,6 @@
           ]
         ]
       },
-      "text-transform": "uppercase",
       "text-max-width": 6.25
     },
     "paint": {
@@ -110,13 +109,13 @@
     "source": "%source%",
     "source-layer": "place_capital",
     "minzoom": 0,
-    "maxzoom": 15,
+    "maxzoom": 11,
     "filter": [
       "all"
     ],
     "layout": {
       "text-font": [
-        "Noto Sans Bold"
+        "Noto Sans Regular"
       ],
       "text-size": {
         "base": 1.2,
@@ -133,12 +132,6 @@
       },
       "text-field": "{name}",
       "text-max-width": 8,
-      "icon-image": "star-11",
-      "text-offset": [
-        0.4,
-        0
-      ],
-      "icon-size": 0.8,
       "text-anchor": "left"
     },
     "paint": {
@@ -188,13 +181,13 @@
     "type": "symbol",
     "source": "%source%",
     "source-layer": "place_city",
-    "maxzoom": 16,
+    "maxzoom": 12,
     "filter": [
       "all"
     ],
     "layout": {
       "text-font": [
-        "Noto Sans Bold"
+        "Noto Sans Regular"
       ],
       "text-size": {
         "base": 1.2,
@@ -223,7 +216,8 @@
     "type": "symbol",
     "source": "%source%",
     "source-layer": "place_town",
-    "maxzoom": 16,
+    "minzoom": 9,
+    "maxzoom": 13,
     "filter": [
       "all"
     ],
@@ -258,6 +252,7 @@
     "type": "symbol",
     "source": "%source%",
     "source-layer": "place_village",
+    "minzoom": 10,
     "maxzoom": 17,
     "filter": [
       "all"
@@ -290,6 +285,7 @@
   },
   {
     "id": "place-other",
+    "minzoom": 11,
     "type": "symbol",
     "source": "%source%",
     "source-layer": "place_other",
@@ -312,9 +308,10 @@
         ]
       },
       "text-font": [
-        "Noto Sans Bold"
+        "Noto Sans Regular"
       ],
       "text-field": "{name}",
+      "text-transform": "uppercase",
       "text-max-width": 9
     },
     "paint": {
