@@ -43,61 +43,6 @@
 /* ROAD COLORS
 /* ================================================================== */
 
-/* For each class of road there are three color variables:
- * - line: for lower zoomlevels when the road is represented by a
- *         single solid line.
- * - case: for higher zoomlevels, this color is for the road's
- *         casing (outline).
- * - fill: for higher zoomlevels, this color is for the road's
- *         inner fill (inline).
- */
-
-// @motorway_fill:     #FFCC88;
-// @motorway_line:     mix(@motorway_fill, #800, 75);
-// @motorway_case:     @motorway_line * 0.9;
-// @motorway_shield_fill: #333; //#fff;
-//
-// @trunk_fill:        #FFEEAA;
-// @trunk_line:        mix(@trunk_fill, #800, 75);
-// @trunk_case:        @trunk_line * 0.9;
-//
-// @primary_fill:      @trunk_fill;
-// @primary_line:      @trunk_line;
-// @primary_case:      @trunk_case;
-//
-// // @secondary_line:    @land*0.8;
-// // @secondary_fill:    #FFFFFF;
-// // @secondary_case:    @secondary_line;
-//
-// @secondary_line:    @land*0.8;
-// @secondary_fill:    @trunk_fill;
-// @secondary_case:    @trunk_case;
-//
-// @standard_fill:     #FFFFFF;
-// @standard_case:     @land*0.7;
-// @standard_line:     @standard_case;
-//
-// @noauto_fill:       #EAEAE9;
-// @noauto_case:       @standard_case;
-//
-// // @pedestrian_line:   @standard_line;
-// @pedestrian_fill:   #FAFAF5;
-// // @pedestrian_case:   @land;
-//
-// @path_line:  	    #CCBBAA;
-// @cycleway_line:     #B42EFF;
-//
-// // @cycle_line:        @standard_line;
-// // @cycle_fill:        #FAFAF5;
-// // @cycle_case:        @land;
-//
-// @rail_fill:         mix(#000, @land, 50);
-// @rail_case:         #fff; //fadeout(@land,50%);
-// // @rail_fill:         #fff;
-// // @rail_case:         @land;
-//
-// @aeroway:           #ddd;
-
 ////////////////////////////////////////////////
 // original colors
 @path: #cba;
@@ -106,26 +51,10 @@
 @minor_case: #cfcdca;
 @minor_fill: #fff;
 
-@road_case: #e9ac77;
+@road_case: @land * 0.7;
 @road_fill: #fea;
 
-@link_case: @road_case;
-@link_fill: @road_fill;
-
-@secondary_case: @road_case;
-@secondary_fill: @road_fill;
-
-@primary_case: @road_case;
-@primary_fill: @road_fill;
-
-@trunk_case: @road_case;
-@trunk_fill: @road_fill;
-
-@motorway_case: @road_case;
 @motorway_fill: #fc8;
-
-@motorway_link_case: @road_case;
-@motorway_link_fill: @motorway_fill;
 
 @railway: #bbb;
 @railway_transit: hsla(0, 0%, 73%, 0.77);
@@ -134,6 +63,8 @@
 @aeroway_taxiway_fill: #fff;
 
 // derived road colors with formulas
+@motorway_case: mix(@motorway_fill, #800, 75) * 0.9;
+@trunk_case: mix(@trunk_fill, #800, 75) * 0.9;
 
 @tunnel_minor_fill: lighten(@minor_fill,10%);
 @tunnel_servicetrack_fill: lighten(@minor_fill,10%);
@@ -142,6 +73,19 @@
 @tunnel_motorway_fill: lighten(@motorway_fill, 10%); //#ffdaa6;
 
 // derived road colors
+@trunk_fill: @road_fill;
+
+@primary_case: @trunk_case;
+@primary_fill: @trunk_fill;
+
+@secondary_case: @trunk_case;
+@secondary_fill: @trunk_fill;
+
+@link_case: @road_case;
+@link_fill: @road_fill;
+
+@motorway_link_case: @motorway_case;
+@motorway_link_fill: @motorway_fill;
 
 @aeroway_runway_case: @aeroway_taxiway_case;
 @aeroway_runway_fill: @aeroway_taxiway_fill;
@@ -199,6 +143,9 @@
 
 @poi_text:          #666;
 @poi_halo:          #ffffff;
+
+@aerodrome_text:    #666;
+@aerodrome_halo:    #ffffff;
 
 @building_text:     #888;
 

@@ -484,7 +484,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "#cba173",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -524,7 +524,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "#cba173",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -571,7 +571,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "#aeaba8",
         "line-dasharray": [
           0.5,
           0.25
@@ -1171,7 +1171,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "#cb8a5c",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -1225,7 +1225,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "#aeaba8",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -1345,7 +1345,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "#cba173",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -1388,7 +1388,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "#cba173",
         "line-opacity": {
           "stops": [
             [
@@ -1450,7 +1450,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "#cba173",
         "line-opacity": {
           "stops": [
             [
@@ -1512,7 +1512,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "#cb8a5c",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -2287,7 +2287,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "#cb8a5c",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -2337,7 +2337,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "#aeaba8",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -2385,7 +2385,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "#cba173",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -2425,7 +2425,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "#cba173",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -2471,7 +2471,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "#cb8a5c",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -3346,11 +3346,6 @@
           ">=",
           "rank",
           25
-        ],
-        [
-          "<",
-          "rank",
-          900
         ]
       ],
       "layout": {
@@ -3763,6 +3758,70 @@
       },
       "paint": {
         "text-color": "#000000"
+      }
+    },
+    {
+      "id": "aerodrome-label-iata",
+      "type": "symbol",
+      "source": "osmscout",
+      "source-layer": "aerodrome_label",
+      "minzoom": 8,
+      "maxzoom": 15,
+      "filter": [
+        "all",
+        [
+          "has",
+          "iata"
+        ]
+      ],
+      "layout": {
+        "text-padding": 2,
+        "text-font": [
+          "Noto Sans Bold"
+        ],
+        "text-anchor": "bottom",
+        "icon-image": "airport-11",
+        "text-field": "{iata}",
+        "text-offset": [
+          0,
+          -0.6
+        ],
+        "text-size": 12,
+        "text-max-width": 9
+      },
+      "paint": {
+        "text-halo-blur": 0.5,
+        "text-color": "#666",
+        "text-halo-width": 1,
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "aerodrome-label-name",
+      "type": "symbol",
+      "source": "osmscout",
+      "source-layer": "aerodrome_label",
+      "minzoom": 15,
+      "layout": {
+        "text-padding": 2,
+        "text-font": [
+          "Noto Sans Bold"
+        ],
+        "text-anchor": "bottom",
+        "icon-image": "airport-11",
+        "text-field": "{name}",
+        "text-offset": [
+          0,
+          -0.6
+        ],
+        "text-size": 12,
+        "text-max-width": 9
+      },
+      "paint": {
+        "text-halo-blur": 0.5,
+        "text-color": "#666",
+        "text-halo-width": 1,
+        "text-halo-color": "#ffffff"
       }
     },
     {
