@@ -669,7 +669,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#fff",
+        "line-color": "#ffffff",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -711,7 +711,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#fff",
+        "line-color": "#ffffff",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -755,7 +755,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#fff4c6",
+        "line-color": "#fff8dd",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -798,7 +798,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#fff4c6",
+        "line-color": "#fff8dd",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -841,7 +841,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#ffdaa6",
+        "line-color": "#ffe2bb",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -924,7 +924,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#999999",
+        "line-color": "#999",
         "line-width": {
           "base": 1.5,
           "stops": [
@@ -961,7 +961,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#999999",
+        "line-color": "#999",
         "line-width": {
           "base": 1.5,
           "stops": [
@@ -1043,7 +1043,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#ffffff",
+        "line-color": "#fff",
         "line-width": {
           "base": 1.5,
           "stops": [
@@ -1097,7 +1097,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#ffffff",
+        "line-color": "#fff",
         "line-width": {
           "base": 1.5,
           "stops": [
@@ -2038,7 +2038,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 0.68)",
+        "line-color": "rgba(186, 186, 186, 0.77)",
         "line-dasharray": [
           0.2,
           8
@@ -2133,7 +2133,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 0.68)",
+        "line-color": "rgba(186, 186, 186, 0.77)",
         "line-dasharray": [
           0.2,
           8

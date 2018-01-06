@@ -30,7 +30,7 @@
 
 @aeroway_area: rgba(255, 255, 255, 1);
 
-@highway_area_case: #cfcdca;
+@highway_area_case: @minor_case;
 @highway_area_fill: hsla(0, 0%, 89%, 0.56);
 
 @railway_area:           hsla(30, 19%, 90%, 0.4);
@@ -100,55 +100,67 @@
 
 ////////////////////////////////////////////////
 // original colors
-@tunnel_servicetrack_case: #cfcdca;
-@tunnel_servicetrack_fill: #fff;
-
 @path: #cba;
-@bridge_path_case: #f8f4f0;
-@tunnel_path_fill: #cba;
+@path_case: #f8f4f0;
 
 @minor_case: #cfcdca;
 @minor_fill: #fff;
-@tunnel_minor_case: #cfcdca;
-@tunnel_minor_fill: #fff;
 
-@link_case: #e9ac77;
-@link_fill: #fea;
+@road_case: #e9ac77;
+@road_fill: #fea;
 
-@secondary_case: #e9ac77;
-@secondary_fill: #fea;
-@tunnel_secondary_case: #e9ac77;
-@tunnel_secondary_fill: #fff4c6;
+@link_case: @road_case;
+@link_fill: @road_fill;
 
-@primary_case: #e9ac77;
-@primary_fill: #fea;
+@secondary_case: @road_case;
+@secondary_fill: @road_fill;
 
-@trunk_case: #e9ac77;
-@trunk_fill: #fea;
-@tunnel_trunk_case: #e9ac77;
-@tunnel_trunk_fill: #fff4c6;
+@primary_case: @road_case;
+@primary_fill: @road_fill;
 
-@motorway_link_case: #e9ac77;
-@motorway_link_fill: #fc8;
+@trunk_case: @road_case;
+@trunk_fill: @road_fill;
 
-@motorway_case: #e9ac77;
+@motorway_case: @road_case;
 @motorway_fill: #fc8;
-@tunnel_motorway_case: #e9ac77;
-@tunnel_motorway_fill: #ffdaa6;
 
-@tunnel_railway_fill: #bbb;
-@railway_transit: hsla(0, 0%, 73%, 0.77);
-@railway_transit_hatching: hsla(0, 0%, 73%, 0.68);
-@railway_service: hsla(0, 0%, 73%, 0.77);
-@railway_service_hatching: hsla(0, 0%, 73%, 0.68);
+@motorway_link_case: @road_case;
+@motorway_link_fill: @motorway_fill;
+
 @railway: #bbb;
-@railway_hatching: #bbb;
+@railway_transit: hsla(0, 0%, 73%, 0.77);
 
-@aeroway_taxiway_case: rgba(153, 153, 153, 1);
-@aeroway_taxiway_fill: rgba(255, 255, 255, 1);
+@aeroway_taxiway_case: #999;
+@aeroway_taxiway_fill: #fff;
 
-@aeroway_runway_case: rgba(153, 153, 153, 1);
-@aeroway_runway_fill: rgba(255, 255, 255, 1);
+// derived road colors with formulas
+
+@tunnel_minor_fill: lighten(@minor_fill,10%);
+@tunnel_servicetrack_fill: lighten(@minor_fill,10%);
+@tunnel_secondary_fill: lighten(@secondary_fill, 10%);
+@tunnel_trunk_fill: lighten(@trunk_fill, 10%); //#fff4c6;
+@tunnel_motorway_fill: lighten(@motorway_fill, 10%); //#ffdaa6;
+
+// derived road colors
+
+@aeroway_runway_case: @aeroway_taxiway_case;
+@aeroway_runway_fill: @aeroway_taxiway_fill;
+
+@railway_transit_hatching: @railway_transit;
+@railway_service: @railway_transit;
+@railway_service_hatching: @railway_transit_hatching;
+@railway_hatching: @railway;
+
+@bridge_path_case: @path_case;
+@tunnel_path_fill: @path;
+
+@tunnel_minor_case: @minor_case;
+@tunnel_servicetrack_case: @minor_case;
+@tunnel_secondary_case: @secondary_case;
+@tunnel_trunk_case: @trunk_case;
+@tunnel_motorway_case: @road_case;
+
+@tunnel_railway_fill: @railway;
 
 /* ================================================================== */
 /* BOUNDARY COLORS
