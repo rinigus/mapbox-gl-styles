@@ -16,6 +16,7 @@
 @wooded_opacity:    0.1;
 
 @ice:               #FFFFFF;
+@water_ice:         #a0c8f0;
 
 @building:          #EFE8E0; //#E4E0E0;
 @hospital:          #FFDDEE;
@@ -25,8 +26,14 @@
 @residential:       @land * 0.98;
 @commercial:        @land * 0.97;
 @industrial:        @land * 0.96;
-@railway:           hsla(30, 19%, 90%, 0.4);
 @parking:           #EEE;
+
+@aeroway_area: rgba(255, 255, 255, 1);
+
+@highway_area_case: #cfcdca;
+@highway_area_fill: hsla(0, 0%, 89%, 0.56);
+
+@railway_area:           hsla(30, 19%, 90%, 0.4);
 
 // derived colors
 @building_border_zoom_low: darken(@building,5%);
@@ -45,51 +52,103 @@
  *         inner fill (inline).
  */
 
-@motorway_fill:     #FFCC88;
-@motorway_line:     mix(@motorway_fill, #800, 75);
-@motorway_case:     @motorway_line * 0.9;
-@motorway_shield_fill: #333; //#fff;
-
-@trunk_fill:        #FFEEAA;
-@trunk_line:        mix(@trunk_fill, #800, 75);
-@trunk_case:        @trunk_line * 0.9;
-
-@primary_fill:      @trunk_fill;
-@primary_line:      @trunk_line;
-@primary_case:      @trunk_case;
-
+// @motorway_fill:     #FFCC88;
+// @motorway_line:     mix(@motorway_fill, #800, 75);
+// @motorway_case:     @motorway_line * 0.9;
+// @motorway_shield_fill: #333; //#fff;
+//
+// @trunk_fill:        #FFEEAA;
+// @trunk_line:        mix(@trunk_fill, #800, 75);
+// @trunk_case:        @trunk_line * 0.9;
+//
+// @primary_fill:      @trunk_fill;
+// @primary_line:      @trunk_line;
+// @primary_case:      @trunk_case;
+//
+// // @secondary_line:    @land*0.8;
+// // @secondary_fill:    #FFFFFF;
+// // @secondary_case:    @secondary_line;
+//
 // @secondary_line:    @land*0.8;
-// @secondary_fill:    #FFFFFF;
-// @secondary_case:    @secondary_line;
+// @secondary_fill:    @trunk_fill;
+// @secondary_case:    @trunk_case;
+//
+// @standard_fill:     #FFFFFF;
+// @standard_case:     @land*0.7;
+// @standard_line:     @standard_case;
+//
+// @noauto_fill:       #EAEAE9;
+// @noauto_case:       @standard_case;
+//
+// // @pedestrian_line:   @standard_line;
+// @pedestrian_fill:   #FAFAF5;
+// // @pedestrian_case:   @land;
+//
+// @path_line:  	    #CCBBAA;
+// @cycleway_line:     #B42EFF;
+//
+// // @cycle_line:        @standard_line;
+// // @cycle_fill:        #FAFAF5;
+// // @cycle_case:        @land;
+//
+// @rail_fill:         mix(#000, @land, 50);
+// @rail_case:         #fff; //fadeout(@land,50%);
+// // @rail_fill:         #fff;
+// // @rail_case:         @land;
+//
+// @aeroway:           #ddd;
 
-@secondary_line:    @land*0.8;
-@secondary_fill:    @trunk_fill;
-@secondary_case:    @trunk_case;
+////////////////////////////////////////////////
+// original colors
+@tunnel_servicetrack_case: #cfcdca;
+@tunnel_servicetrack_fill: #fff;
 
-@standard_fill:     #FFFFFF;
-@standard_case:     @land*0.7;
-@standard_line:     @standard_case;
+@path: #cba;
+@bridge_path_case: #f8f4f0;
+@tunnel_path_fill: #cba;
 
-@noauto_fill:       #EAEAE9;
-@noauto_case:       @standard_case;
+@minor_case: #cfcdca;
+@minor_fill: #fff;
+@tunnel_minor_case: #cfcdca;
+@tunnel_minor_fill: #fff;
 
-// @pedestrian_line:   @standard_line;
-@pedestrian_fill:   #FAFAF5;
-// @pedestrian_case:   @land;
+@link_case: #e9ac77;
+@link_fill: #fea;
 
-@path_line:  	    #CCBBAA;
-@cycleway_line:     #B42EFF;
+@secondary_case: #e9ac77;
+@secondary_fill: #fea;
+@tunnel_secondary_case: #e9ac77;
+@tunnel_secondary_fill: #fff4c6;
 
-// @cycle_line:        @standard_line;
-// @cycle_fill:        #FAFAF5;
-// @cycle_case:        @land;
+@primary_case: #e9ac77;
+@primary_fill: #fea;
 
-@rail_fill:         mix(#000, @land, 50);
-@rail_case:         #fff; //fadeout(@land,50%);
-// @rail_fill:         #fff;
-// @rail_case:         @land;
+@trunk_case: #e9ac77;
+@trunk_fill: #fea;
+@tunnel_trunk_case: #e9ac77;
+@tunnel_trunk_fill: #fff4c6;
 
-@aeroway:           #ddd;
+@motorway_link_case: #e9ac77;
+@motorway_link_fill: #fc8;
+
+@motorway_case: #e9ac77;
+@motorway_fill: #fc8;
+@tunnel_motorway_case: #e9ac77;
+@tunnel_motorway_fill: #ffdaa6;
+
+@tunnel_railway_fill: #bbb;
+@railway_transit: hsla(0, 0%, 73%, 0.77);
+@railway_transit_hatching: hsla(0, 0%, 73%, 0.68);
+@railway_service: hsla(0, 0%, 73%, 0.77);
+@railway_service_hatching: hsla(0, 0%, 73%, 0.68);
+@railway: #bbb;
+@railway_hatching: #bbb;
+
+@aeroway_taxiway_case: rgba(153, 153, 153, 1);
+@aeroway_taxiway_fill: rgba(255, 255, 255, 1);
+
+@aeroway_runway_case: rgba(153, 153, 153, 1);
+@aeroway_runway_fill: rgba(255, 255, 255, 1);
 
 /* ================================================================== */
 /* BOUNDARY COLORS
@@ -126,7 +185,9 @@
 @town_text:         #666;
 @town_halo:         @place_halo;
 
-@poi_text:          #888;
+@poi_text:          #666;
+@poi_halo:          #ffffff;
+
 @building_text:     #888;
 
 @area_text:	    @poi_text;
@@ -142,6 +203,9 @@
 
 @locality_text:     #999;
 @locality_halo:     @land;
+
+@water_text:        @water*0.6;
+@water_halo:        fadeout(lighten(@water,5%),25%);
 
 /* Also used for other small places: hamlets, suburbs, localities */
 @village_text:      #888;

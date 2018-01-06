@@ -73,7 +73,7 @@
     "source": "%source%",
     "source-layer": "place_state",
     "minzoom": 5,
-    "maxzoom": 10,
+    "maxzoom": 8,
     "filter": [
       "all"
     ],
@@ -181,6 +181,7 @@
     "type": "symbol",
     "source": "%source%",
     "source-layer": "place_city",
+    "minzoom": 8,
     "maxzoom": 12,
     "filter": [
       "all"

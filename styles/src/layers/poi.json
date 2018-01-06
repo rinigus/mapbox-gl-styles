@@ -40,9 +40,9 @@
     },
     "paint": {
       "text-halo-blur": 0.5,
-      "text-color": "#666",
+      "text-color": "%poi_text%",
       "text-halo-width": 1,
-      "text-halo-color": "#ffffff"
+      "text-halo-color": "%poi_halo%"
     }
   },
   {
@@ -89,9 +89,9 @@
     },
     "paint": {
       "text-halo-blur": 0.5,
-      "text-color": "#666",
+      "text-color": "%poi_text%",
       "text-halo-width": 1,
-      "text-halo-color": "#ffffff"
+      "text-halo-color": "%poi_halo%"
     }
   },
   {
@@ -137,9 +137,9 @@
     },
     "paint": {
       "text-halo-blur": 0.5,
-      "text-color": "#666",
+      "text-color": "%poi_text%",
       "text-halo-width": 1,
-      "text-halo-color": "#ffffff"
+      "text-halo-color": "%poi_halo%"
     }
   }
 ]

@@ -4,7 +4,7 @@
     "type": "symbol",
     "source": "%source%",
     "source-layer": "waterway",
-    "minzoom": 13,
+    "minzoom": 12,
     "filter": [
       "all",
       [
@@ -24,43 +24,14 @@
       "text-size": 14,
       "text-field": "{name}",
       "text-max-width": 5,
-      "text-rotation-alignment": "map",
       "symbol-placement": "line",
       "text-letter-spacing": 0.2,
       "symbol-spacing": 350
     },
     "paint": {
-      "text-color": "#74aee9",
+      "text-color": "%water_text%",
       "text-halo-width": 1.5,
-      "text-halo-color": "rgba(255,255,255,0.7)"
-    }
-  },
-  {
-    "id": "water-name-lakeline",
-    "type": "symbol",
-    "source": "%source%",
-    "source-layer": "water_name",
-    "filter": [
-      "==",
-      "$type",
-      "LineString"
-    ],
-    "layout": {
-      "text-font": [
-        "Noto Sans Italic"
-      ],
-      "text-size": 14,
-      "text-field": "{name}",
-      "text-max-width": 5,
-      "text-rotation-alignment": "map",
-      "symbol-placement": "line",
-      "symbol-spacing": 350,
-      "text-letter-spacing": 0.2
-    },
-    "paint": {
-      "text-color": "#74aee9",
-      "text-halo-width": 1.5,
-      "text-halo-color": "rgba(255,255,255,0.7)"
+      "text-halo-color": "%water_halo%"
     }
   },
   {
@@ -88,22 +59,23 @@
       "text-size": 14,
       "text-field": "{name}",
       "text-max-width": 5,
-      "text-rotation-alignment": "map",
       "symbol-placement": "point",
       "symbol-spacing": 350,
       "text-letter-spacing": 0.2
     },
     "paint": {
-      "text-color": "#74aee9",
+      "text-color": "%water_text%",
       "text-halo-width": 1.5,
-      "text-halo-color": "rgba(255,255,255,0.7)"
+      "text-halo-color": "%water_halo%"
     }
   },
+
   {
-    "id": "water-name-other",
+    "id": "water-name-other-7",
     "type": "symbol",
     "source": "%source%",
     "source-layer": "water_name",
+    "minzoom": 7,
     "filter": [
       "all",
       [
@@ -115,6 +87,9 @@
         "!in",
         "class",
         "ocean"
+      ],
+      [
+        "<=", "rank", 8
       ]
     ],
     "layout": {
@@ -135,16 +110,287 @@
       },
       "text-field": "{name}",
       "text-max-width": 5,
-      "text-rotation-alignment": "map",
       "symbol-placement": "point",
       "symbol-spacing": 350,
       "text-letter-spacing": 0.2,
       "visibility": "visible"
     },
     "paint": {
-      "text-color": "#74aee9",
+      "text-color": "%water_text%",
       "text-halo-width": 1.5,
-      "text-halo-color": "rgba(255,255,255,0.7)"
+      "text-halo-color": "%water_halo%"
+    }
+  },
+
+  {
+    "id": "water-name-other-10",
+    "type": "symbol",
+    "source": "%source%",
+    "source-layer": "water_name",
+    "minzoom": 10,
+    "filter": [
+      "all",
+      [
+        "==",
+        "$type",
+        "Point"
+      ],
+      [
+        "!in",
+        "class",
+        "ocean"
+      ],
+      [
+        ">", "rank", 8
+      ],
+      [
+        "<=", "rank", 10
+      ]
+    ],
+    "layout": {
+      "text-font": [
+        "Noto Sans Italic"
+      ],
+      "text-size": {
+        "stops": [
+          [
+            0,
+            10
+          ],
+          [
+            6,
+            14
+          ]
+        ]
+      },
+      "text-field": "{name}",
+      "text-max-width": 5,
+      "symbol-placement": "point",
+      "symbol-spacing": 350,
+      "text-letter-spacing": 0.2,
+      "visibility": "visible"
+    },
+    "paint": {
+      "text-color": "%water_text%",
+      "text-halo-width": 1.5,
+      "text-halo-color": "%water_halo%"
+    }
+  },
+
+  {
+    "id": "water-name-other-12",
+    "type": "symbol",
+    "source": "%source%",
+    "source-layer": "water_name",
+    "minzoom": 12,
+    "filter": [
+      "all",
+      [
+        "==",
+        "$type",
+        "Point"
+      ],
+      [
+        "!in",
+        "class",
+        "ocean"
+      ],
+      [
+        ">", "rank", 10
+      ],
+      [
+        "<=", "rank", 12
+      ]
+    ],
+    "layout": {
+      "text-font": [
+        "Noto Sans Italic"
+      ],
+      "text-size": {
+        "stops": [
+          [
+            0,
+            10
+          ],
+          [
+            6,
+            14
+          ]
+        ]
+      },
+      "text-field": "{name}",
+      "text-max-width": 5,
+      "symbol-placement": "point",
+      "symbol-spacing": 350,
+      "text-letter-spacing": 0.2,
+      "visibility": "visible"
+    },
+    "paint": {
+      "text-color": "%water_text%",
+      "text-halo-width": 1.5,
+      "text-halo-color": "%water_halo%"
+    }
+  },
+
+  {
+    "id": "water-name-other-14",
+    "type": "symbol",
+    "source": "%source%",
+    "source-layer": "water_name",
+    "minzoom": 14,
+    "filter": [
+      "all",
+      [
+        "==",
+        "$type",
+        "Point"
+      ],
+      [
+        "!in",
+        "class",
+        "ocean"
+      ],
+      [
+        ">", "rank", 12
+      ],
+      [
+        "<=", "rank", 14
+      ]
+    ],
+    "layout": {
+      "text-font": [
+        "Noto Sans Italic"
+      ],
+      "text-size": {
+        "stops": [
+          [
+            0,
+            10
+          ],
+          [
+            6,
+            14
+          ]
+        ]
+      },
+      "text-field": "{name}",
+      "text-max-width": 5,
+      "symbol-placement": "point",
+      "symbol-spacing": 350,
+      "text-letter-spacing": 0.2,
+      "visibility": "visible"
+    },
+    "paint": {
+      "text-color": "%water_text%",
+      "text-halo-width": 1.5,
+      "text-halo-color": "%water_halo%"
+    }
+  },
+
+  {
+    "id": "water-name-other-16",
+    "type": "symbol",
+    "source": "%source%",
+    "source-layer": "water_name",
+    "minzoom": 16,
+    "filter": [
+      "all",
+      [
+        "==",
+        "$type",
+        "Point"
+      ],
+      [
+        "!in",
+        "class",
+        "ocean"
+      ],
+      [
+        ">", "rank", 14
+      ],
+      [
+        "<=", "rank", 16
+      ]
+    ],
+    "layout": {
+      "text-font": [
+        "Noto Sans Italic"
+      ],
+      "text-size": {
+        "stops": [
+          [
+            0,
+            10
+          ],
+          [
+            6,
+            14
+          ]
+        ]
+      },
+      "text-field": "{name}",
+      "text-max-width": 5,
+      "symbol-placement": "point",
+      "symbol-spacing": 350,
+      "text-letter-spacing": 0.2,
+      "visibility": "visible"
+    },
+    "paint": {
+      "text-color": "%water_text%",
+      "text-halo-width": 1.5,
+      "text-halo-color": "%water_halo%"
+    }
+  },
+
+  {
+    "id": "water-name-other-rest",
+    "type": "symbol",
+    "source": "%source%",
+    "source-layer": "water_name",
+    "minzoom": 17,
+    "filter": [
+      "all",
+      [
+        "==",
+        "$type",
+        "Point"
+      ],
+      [
+        "!in",
+        "class",
+        "ocean"
+      ],
+      [
+        ">", "rank", 16
+      ]
+    ],
+    "layout": {
+      "text-font": [
+        "Noto Sans Italic"
+      ],
+      "text-size": {
+        "stops": [
+          [
+            0,
+            10
+          ],
+          [
+            6,
+            14
+          ]
+        ]
+      },
+      "text-field": "{name}",
+      "text-max-width": 5,
+      "symbol-placement": "point",
+      "symbol-spacing": 350,
+      "text-letter-spacing": 0.2,
+      "visibility": "visible"
+    },
+    "paint": {
+      "text-color": "%water_text%",
+      "text-halo-width": 1.5,
+      "text-halo-color": "%water_halo%"
     }
   }
 ]

@@ -156,7 +156,7 @@
       "railway"
     ],
     "paint": {
-      "fill-color": "%railway%"
+      "fill-color": "%railway_area%"
     }
   }
 ]
