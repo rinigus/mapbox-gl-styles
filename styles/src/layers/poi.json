@@ -25,7 +25,7 @@
       ],
       "text-anchor": "top",
       "icon-image": "{symbol}-11",
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-offset": [
         0,
         0.6
@@ -74,7 +74,7 @@
       ],
       "text-anchor": "top",
       "icon-image": "{symbol}-11",
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-offset": [
         0,
         0.6
@@ -122,7 +122,7 @@
       ],
       "text-anchor": "top",
       "icon-image": "{symbol}-11",
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-offset": [
         0,
         0.6

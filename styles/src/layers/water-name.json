@@ -22,7 +22,7 @@
         "Noto Sans Italic"
       ],
       "text-size": 14,
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-max-width": 5,
       "symbol-placement": "line",
       "text-letter-spacing": 0.2,
@@ -57,7 +57,7 @@
         "Noto Sans Italic"
       ],
       "text-size": 14,
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-max-width": 5,
       "symbol-placement": "point",
       "symbol-spacing": 350,
@@ -108,7 +108,7 @@
           ]
         ]
       },
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-max-width": 5,
       "symbol-placement": "point",
       "symbol-spacing": 350,
@@ -163,7 +163,7 @@
           ]
         ]
       },
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-max-width": 5,
       "symbol-placement": "point",
       "symbol-spacing": 350,
@@ -218,7 +218,7 @@
           ]
         ]
       },
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-max-width": 5,
       "symbol-placement": "point",
       "symbol-spacing": 350,
@@ -273,7 +273,7 @@
           ]
         ]
       },
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-max-width": 5,
       "symbol-placement": "point",
       "symbol-spacing": 350,
@@ -328,7 +328,7 @@
           ]
         ]
       },
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-max-width": 5,
       "symbol-placement": "point",
       "symbol-spacing": 350,
@@ -380,7 +380,7 @@
           ]
         ]
       },
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-max-width": 5,
       "symbol-placement": "point",
       "symbol-spacing": 350,

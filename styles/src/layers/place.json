@@ -13,7 +13,7 @@
       "text-font": [
         "Noto Sans Bold"
       ],
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-size": 14,
       "text-max-width": 6.25,
       "text-transform": "uppercase"
@@ -38,7 +38,7 @@
       "text-font": [
         "Noto Sans Bold"
       ],
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-size": {
         "stops": [
           [
@@ -81,7 +81,7 @@
       "text-font": [
         "Noto Sans Bold"
       ],
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-size": {
         "stops": [
           [
@@ -130,7 +130,7 @@
           ]
         ]
       },
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-max-width": 8,
       "text-anchor": "left"
     },
@@ -154,7 +154,7 @@
       "text-font": [
         "Noto Sans Regular"
       ],
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-size": {
         "stops": [
           [
@@ -203,7 +203,7 @@
           ]
         ]
       },
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-max-width": 8
     },
     "paint": {
@@ -239,7 +239,7 @@
           ]
         ]
       },
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-max-width": 8
     },
     "paint": {
@@ -275,7 +275,7 @@
           ]
         ]
       },
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-max-width": 8
     },
     "paint": {
@@ -311,7 +311,7 @@
       "text-font": [
         "Noto Sans Regular"
       ],
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "text-transform": "uppercase",
       "text-max-width": 9
     },

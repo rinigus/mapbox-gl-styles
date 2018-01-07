@@ -27,7 +27,7 @@
       "text-font": [
         "Noto Sans Regular"
       ],
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "symbol-placement": "line",
       "text-rotation-alignment": "map"
     },
@@ -75,7 +75,7 @@
       "text-font": [
         "Noto Sans Regular"
       ],
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "symbol-placement": "line",
       "text-rotation-alignment": "map"
     },
@@ -116,7 +116,7 @@
       "text-font": [
         "Noto Sans Regular"
       ],
-      "text-field": "{name}",
+      "text-field": "{%name%}",
       "symbol-placement": "line",
       "text-rotation-alignment": "map"
     },
