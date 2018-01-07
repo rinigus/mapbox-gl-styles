@@ -49,7 +49,7 @@
       ],
       "text-anchor": "bottom",
       "icon-image": "airport-11",
-      "text-field": "{name}",
+      "text-field": "{name}\n{iata}",
       "text-offset": [
         0,
         -0.6
