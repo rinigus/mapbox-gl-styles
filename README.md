@@ -54,3 +54,5 @@ When working with styles, run `bin/styler` to generate Mapbox GL style. This scr
 
 will generate Mapbox GL style compatible with OSM Scout Server where `hosturl` variable is replaced by `http://HOSTNAMEPORT`. As a limitation, it looks like
 variable values cannot contain `:` symbol.
+
+Script `bin/make_styles` allows to regenerate all supported styles for OSM Scout Server.
