@@ -1,0 +1,171 @@
+// general variables
+@source:    osmscout;
+@name:      name;
+
+// Colors
+@land:              #00415F;
+@water:             #011422;
+@grass:             fadeout(#00867F, 50%);
+
+@park:              #007888;
+@park_outline:      lighten(@park, 10%);
+
+@cemetery:          #3C5D61; /* proposed */
+
+@wooded:            #00516B;
+@wooded_outline:    hsla(0, 0%, 0%, 0.03);
+@wooded_opacity:    0.1;
+
+@ice:               lighten(@land, 10%);
+@water_ice:         lighten(@water, 10%);
+
+@building:          #2A6381;
+@hospital:          #143A6A; //293475;
+@school:            #547B95;
+@sports:            #01B2AA;
+
+@residential:       @land * 1.02;
+@commercial:        @land * 1.03;
+@industrial:        @land * 1.04;
+@parking:           @land * 1.02;
+
+@aeroway_area: #6F8F9E;
+
+@highway_area_case: @minor_case;
+@highway_area_fill: hsla(0, 0%, 89%, 0.56);
+
+@railway_area:      @industrial;
+
+// derived colors
+@building_border_zoom_low: lighten(@building,5%);
+@building_border_zoom_high: lighten(@building,10%);
+
+/* ================================================================== */
+/* ROAD COLORS
+/* ================================================================== */
+
+////////////////////////////////////////////////
+// original colors
+@path: #00415F;
+@path_case: @land;
+
+@motorway_fill: #000;
+@motorway_case:     #24E2FF;
+
+@trunk_fill:  #000;
+@trunk_case:  #1FB7D9;
+
+@road_case: mix(@trunk_case, @land, 50);
+@road_fill: mix(#000, @land, 70);
+
+@minor_fill: mix(#000, @land, 70);
+@minor_case: mix(@trunk_case, @land, 50);
+
+@railway: @trunk_case;
+@railway_transit: fadeout(@railway, 25%);
+
+@aeroway_taxiway_case: mix(#ddd, @land, 60);
+@aeroway_taxiway_fill: mix(#ddd, @land, 50);
+
+// derived road colors with formulas
+@tunnel_minor_fill: lighten(@minor_fill,10%);
+@tunnel_servicetrack_fill: lighten(@minor_fill,10%);
+@tunnel_secondary_fill: lighten(@secondary_fill, 10%);
+@tunnel_trunk_fill: lighten(@trunk_fill, 10%); //#fff4c6;
+@tunnel_motorway_fill: lighten(@motorway_fill, 10%); //#ffdaa6;
+
+// derived road colors
+@primary_case: @trunk_case;
+@primary_fill: @trunk_fill;
+
+@secondary_case: @trunk_case;
+@secondary_fill: @trunk_fill;
+
+@link_case: @road_case;
+@link_fill: @road_fill;
+
+@motorway_link_case: @motorway_case;
+@motorway_link_fill: @motorway_fill;
+
+@aeroway_runway_case: @aeroway_taxiway_case;
+@aeroway_runway_fill: @aeroway_taxiway_fill;
+
+@railway_transit_hatching: @railway_transit;
+@railway_service: @railway_transit;
+@railway_service_hatching: @railway_transit_hatching;
+@railway_hatching: @railway;
+
+@bridge_path_case: @path_case;
+@tunnel_path_fill: @path;
+
+@tunnel_minor_case: @minor_case;
+@tunnel_servicetrack_case: @minor_case;
+@tunnel_secondary_case: @secondary_case;
+@tunnel_trunk_case: @trunk_case;
+@tunnel_motorway_case: @road_case;
+
+@tunnel_railway_fill: @railway;
+
+/* ================================================================== */
+/* BOUNDARY COLORS
+/* ================================================================== */
+
+@admin_2:           mix(#FFF, @land, 75);
+
+@fence_color:       mix(#FFF, @land, 50);
+@barrier_point:     mix(#FFF, @land, 50);
+
+/* ================================================================== */
+/* LABEL COLORS
+/* ================================================================== */
+
+/* We set up a default halo color for places so you can edit them all
+   at once or override each individually. */
+@place_halo:        fadeout(#000,34%);
+
+@country_text:      #fff;
+@country_halo:      @place_halo;
+
+@continent_text:    #fff;
+@continent_halo:    @country_halo;
+
+@state_text:        #fff;
+@state_halo:        @place_halo;
+
+@city_text:         #fff;
+@city_halo:         @place_halo;
+
+@island_text:        #fff;
+@island_halo:        @place_halo;
+
+@town_text:         #fff;
+@town_halo:         @place_halo;
+
+@poi_text:          #fff;
+@poi_halo:          @place_halo;
+
+@aerodrome_text:    #fff;
+@aerodrome_halo:    @place_halo;
+
+@building_text:     fadeout(#fff, 25%);
+
+@area_text:	    @poi_text;
+@area_halo:         @place_halo;
+
+@road_text:         #fff;
+@road_halo:         #000;
+@road_shield_text:  rgba(0, 0, 0, 1);
+@road_shield_text_us: rgba(0, 0, 0, 1);
+
+@other_text:        #fff;
+@other_halo:        @place_halo;
+
+@locality_text:     #fff;
+@locality_halo:     @land;
+
+@water_text:        #66f;
+@water_halo:        fadeout(darken(@water,5%),25%);
+
+/* Also used for other small places: hamlets, suburbs, localities */
+@village_text:      #fff;
+@village_halo:      @place_halo;
