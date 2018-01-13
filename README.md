@@ -1,7 +1,9 @@
 # Mapbox GL Styles
 
 Collection of Mapbox GL styles and sprites. The styles are developed targeting
-support for [OSM Scout Server](https://github.com/rinigus/osmscout-server) clients.
+support for [OSM Scout Server](https://github.com/rinigus/osmscout-server) clients and tiles built using
+scripts from https://github.com/rinigus/mapbox-gl-importer . See [README.md](https://github.com/rinigus/mapbox-gl-importer/blob/master/README.md)
+for description of the tile schema.
 
 
 # Sprites
