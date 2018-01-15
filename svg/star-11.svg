@@ -1,3 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" height="17" width="17"><title>star-11.svg</title><rect fill="none" x="0" y="0" width="17" height="17"></rect><path fill="rgba(255,255,255,0.25)" transform="translate(3 3)" d="M5.4,0L4,3.5H0l3,3L1.5,11l3.9-2.6
-	L9.5,11L8,6.5l3-3H7L5.4,0z" style="stroke-linejoin:round;stroke-miterlimit:4px;" stroke="rgba(255,255,255,0.25)" stroke-width="2"></path><path fill="#444444" transform="translate(3 3)" d="M5.4,0L4,3.5H0l3,3L1.5,11l3.9-2.6
-	L9.5,11L8,6.5l3-3H7L5.4,0z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" height="17" width="17">
+    <path fill="none" d="M0 0h17v17H0z"/>
+    <path d="M8.4 3L7 6.5H3l3 3L4.5 14l3.9-2.6 4.1 2.6L11 9.5l3-3h-4L8.4 3z" stroke="rgba(255,255,255,0.25)" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M8.4 3L7 6.5H3l3 3L4.5 14l3.9-2.6 4.1 2.6L11 9.5l3-3h-4L8.4 3z"/>
+</svg>
