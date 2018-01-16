@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17">
-    <path style="marker:none" d="M1.5 1c-5 12 5 15.5 7 16 2-.5 12-4 7-16-2 1-5 1-7 0-2 1-5 1-7 0z" color="#000" fill="#53536c" fill-rule="evenodd" overflow="visible"/>
+    <path style="marker:none" d="M1.5 1c-5 12 5 15.5 7 16 2-.5 12-4 7-16-2 1-5 1-7 0-2 1-5 1-7 0z" color="#000" fill="#000" fill-rule="evenodd" overflow="visible"/>
     <path d="M1.5 4c4-.5 10-.5 14 0 1.5 5.5-1 10-7 12-6-2-8.5-6.5-7-12z" fill="#fff"/>
 </svg>

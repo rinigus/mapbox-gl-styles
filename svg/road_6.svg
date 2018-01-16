@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" height="14.4" width="40">
-    <g color="#3a3836" fill-rule="evenodd" transform="matrix(.8 0 0 .8 -188 -369.09)">
-        <rect style="marker:none" width="50" height="18" x="235" y="461.362" ry="3" rx="3" overflow="visible" fill="#3a3836"/>
+    <g color="#000" fill-rule="evenodd" transform="matrix(.8 0 0 .8 -188 -369.09)">
+        <rect style="marker:none" width="50" height="18" x="235" y="461.362" ry="3" rx="3" overflow="visible" fill="#000"/>
         <rect y="462.362" x="236" height="16" width="48" style="marker:none" ry="2" rx="2" overflow="visible" fill="#fff"/>
     </g>
 </svg>
