@@ -1,0 +1,54 @@
+#!/usr/bin/env python2.7
+
+import argparse, glob, os, tempfile
+from yaml import load as yload
+try:
+    from yaml import CLoader as Loader
+except ImportError:
+    from yaml import Loader
+
+parser = argparse.ArgumentParser(description='Apply colors to SVGs')
+parser.add_argument('bg', help='Background color')
+parser.add_argument('fg', help='Foreground color')
+parser.add_argument('svg_in', help='Directory with SVGs')
+parser.add_argument('svg_out', help='Directory with SVGs')
+parser.add_argument('--palette', help='File path for a palette in YAML format')
+
+args = parser.parse_args()
+
+# colors in svg that correspond to background or foreground
+# list should start from long to short version
+bg = ['#FFFFFF', '#FFF', '#ffffff', '#fff']
+fg = ['#000000', '#000']
+anyc = bg + fg
+
+FG_COLTAG = '#FOREGROUND COLOR#'
+BG_COLTAG = '#BACKGROUND COLOR#'
+
+for fname in glob.glob(os.path.join(args.svg_in, "*.svg")):
+    basename = os.path.basename(fname)
+    foutname = os.path.join(args.svg_out, basename)
+    with open(fname,'r') as f:
+        s = f.read()
+        color_found = False
+        for c in anyc:
+            if s.find(c) >= 0:
+                color_found = True
+
+        if color_found:
+            print "Colors specified, going to replace them in", fname
+
+            for c in fg:
+                s = s.replace(c, FG_COLTAG)
+            for c in bg:
+                s = s.replace(c, BG_COLTAG)
+
+            s = s.replace(FG_COLTAG, args.fg)
+            s = s.replace(BG_COLTAG, args.bg)
+
+        else:
+            for e in ['rect', 'path', 'circle']:
+                s = s.replace('<' + e, '<' + e + ' fill="%s"' % args.fg)
+
+        with open(foutname, 'w') as fout:
+            fout.write(s)
