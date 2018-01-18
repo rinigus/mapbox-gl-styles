@@ -12,7 +12,7 @@ parser.add_argument('bg', help='Background color')
 parser.add_argument('fg', help='Foreground color')
 parser.add_argument('svg_in', help='Directory with SVGs')
 parser.add_argument('svg_out', help='Directory with SVGs')
-parser.add_argument('--palette', help='File path for a palette in YAML format')
+parser.add_argument('--palette', help='File path for a palette in YAML format [not implemented]')
 
 args = parser.parse_args()
 
@@ -36,8 +36,6 @@ for fname in glob.glob(os.path.join(args.svg_in, "*.svg")):
                 color_found = True
 
         if color_found:
-            print "Colors specified, going to replace them in", fname
-
             for c in fg:
                 s = s.replace(c, FG_COLTAG)
             for c in bg:

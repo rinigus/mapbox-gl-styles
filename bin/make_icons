@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+
+export PROGPATH=$(dirname "$0")
+
+color_icons () {
+  echo "Generating" $3
+  TMPDIR=`mktemp -d`
+  $PROGPATH/color_svg $1 $2 svg $TMPDIR
+  spritezero --ratio 4 sprites/$3 $TMPDIR
+  rm -rf $TMPDIR
+}
+
+color_icons '#FFF' '#000' sprite
+color_icons '#000' '#FFF' sprite_mc

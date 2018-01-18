@@ -25,6 +25,8 @@ Generate sprites (used ratio 4):
 spritezero --ratio 4 sprites/sprite svg
 ```
 
+Script `bin/make_icons` allows to regenerate all supported icons for OSM Scout Server.
+
 
 # Styles
 
