@@ -18,7 +18,7 @@
       "maxzoom": 14
     }
   },
-  "sprite": "%hosturl%/v1/mbgl/sprite",
+  "sprite": "%hosturl%/v1/mbgl/sprite_mc",
   "glyphs": "%hosturl%/v1/mbgl/glyphs?stack={fontstack}&range={range}",
   "id": "%source%"
 }
