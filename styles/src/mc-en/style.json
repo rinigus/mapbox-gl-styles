@@ -1,0 +1,24 @@
+{
+  "version": 8,
+  "name": "Midnight Commander English",
+  "center": [
+    24,
+    58
+  ],
+  "zoom": 7,
+  "bearing": 0,
+  "pitch": 0,
+  "sources": {
+    "osmscout": {
+      "type": "vector",
+      "tiles": [
+        "%hosturl%/v1/mbgl/tile?x={x}&y={y}&z={z}"
+      ],
+      "minzoom": 0,
+      "maxzoom": 14
+    }
+  },
+  "sprite": "%hosturl%/v1/mbgl/sprite_mc",
+  "glyphs": "%hosturl%/v1/mbgl/glyphs?stack={fontstack}&range={range}",
+  "id": "%source%"
+}
