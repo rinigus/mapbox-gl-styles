@@ -3,6 +3,7 @@
 ../layers/landuses.json
 ../layers/landcover.json
 ../layers/water-ice.json
+../layers/waterway.json
 ../layers/buildings.json
 ../layers/roads.json
 ../layers/boundary.json
