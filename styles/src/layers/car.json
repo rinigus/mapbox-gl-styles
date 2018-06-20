@@ -76,6 +76,7 @@
       ],
       "text-anchor": "top",
       "icon-image": "{symbol}-11",
+      "text-optional": true,
       "text-field": "{%name%}",
       "text-offset": [
         0,

@@ -30,6 +30,7 @@
         0,
         0.6
       ],
+      "text-optional": true,
       "text-size": 12,
       "text-max-width": 9
     },
@@ -79,6 +80,7 @@
         0,
         0.6
       ],
+      "text-optional": true,
       "text-size": 12,
       "text-max-width": 9
     },
@@ -127,6 +129,7 @@
         0,
         0.6
       ],
+      "text-optional": true,
       "text-size": 12,
       "text-max-width": 9
     },
