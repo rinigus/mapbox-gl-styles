@@ -35,7 +35,7 @@
         0,
         0.6
       ],
-      "text-size": 12,
+      "text-size": %size_medium%,
       "text-max-width": 9
     },
     "paint": {
@@ -82,7 +82,7 @@
         0,
         0.6
       ],
-      "text-size": 12,
+      "text-size": %size_medium%,
       "text-max-width": 9
     },
     "paint": {

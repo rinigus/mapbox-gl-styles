@@ -14,7 +14,7 @@
         "Noto Sans Bold"
       ],
       "text-field": "{%name%}",
-      "text-size": 14,
+      "text-size": %size_large%,
       "text-max-width": 6.25,
       "text-transform": "uppercase"
     },
@@ -43,11 +43,11 @@
         "stops": [
           [
             3,
-            11
+            %size_medium%
           ],
           [
             7,
-            17
+            %size_huge%
           ]
         ]
       },
@@ -86,11 +86,11 @@
         "stops": [
           [
             5,
-            11
+            %size_medium%
           ],
           [
             14,
-            17
+            %size_huge%
           ]
         ]
       },
@@ -122,11 +122,11 @@
         "stops": [
           [
             7,
-            14
+            %size_large%
           ],
           [
             11,
-            24
+            %size_huge24%
           ]
         ]
       },
@@ -159,11 +159,11 @@
         "stops": [
           [
             8,
-            11
+            %size_medium%
           ],
           [
             12,
-            17
+            %size_large%
           ]
         ]
       },
@@ -195,11 +195,11 @@
         "stops": [
           [
             7,
-            14
+            %size_large%
           ],
           [
             11,
-            24
+            %size_huge24%
           ]
         ]
       },
@@ -231,11 +231,11 @@
         "stops": [
           [
             10,
-            14
+            %size_medium%
           ],
           [
             15,
-            24
+            %size_huge24%
           ]
         ]
       },
@@ -267,11 +267,11 @@
         "stops": [
           [
             10,
-            12
+            %size_medium%
           ],
           [
             15,
-            22
+            %size_huge22%
           ]
         ]
       },
@@ -300,11 +300,11 @@
         "stops": [
           [
             12,
-            10
+            %size_small%
           ],
           [
             15,
-            14
+            %size_large%
           ]
         ]
       },

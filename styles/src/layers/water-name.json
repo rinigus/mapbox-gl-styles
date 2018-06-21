@@ -21,7 +21,7 @@
       "text-font": [
         "Noto Sans Italic"
       ],
-      "text-size": 14,
+      "text-size": %size_large%,
       "text-field": "{%name%}",
       "text-max-width": 5,
       "symbol-placement": "line",
@@ -56,7 +56,7 @@
       "text-font": [
         "Noto Sans Italic"
       ],
-      "text-size": 14,
+      "text-size": %size_large%,
       "text-field": "{%name%}",
       "text-max-width": 5,
       "symbol-placement": "point",
@@ -100,11 +100,11 @@
         "stops": [
           [
             0,
-            10
+            %size_small%
           ],
           [
             6,
-            14
+            %size_large%
           ]
         ]
       },
@@ -155,11 +155,11 @@
         "stops": [
           [
             0,
-            10
+            %size_small%
           ],
           [
             6,
-            14
+            %size_large%
           ]
         ]
       },
@@ -210,11 +210,11 @@
         "stops": [
           [
             0,
-            10
+            %size_small%
           ],
           [
             6,
-            14
+            %size_large%
           ]
         ]
       },
@@ -265,11 +265,11 @@
         "stops": [
           [
             0,
-            10
+            %size_small%
           ],
           [
             6,
-            14
+            %size_large%
           ]
         ]
       },
@@ -320,11 +320,11 @@
         "stops": [
           [
             0,
-            10
+            %size_small%
           ],
           [
             6,
-            14
+            %size_large%
           ]
         ]
       },
@@ -372,11 +372,11 @@
         "stops": [
           [
             0,
-            10
+            %size_small%
           ],
           [
             6,
-            14
+            %size_large%
           ]
         ]
       },

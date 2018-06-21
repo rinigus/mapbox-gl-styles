@@ -16,11 +16,11 @@
         "stops": [
           [
             13,
-            10
+            %size_small%
           ],
           [
             14,
-            11
+            %size_medium%
           ]
         ]
       },
@@ -64,11 +64,11 @@
         "stops": [
           [
             13,
-            10
+            %size_small%
           ],
           [
             14,
-            11
+            %size_medium%
           ]
         ]
       },
@@ -105,11 +105,11 @@
         "stops": [
           [
             13,
-            12
+            %size_medium%
           ],
           [
             14,
-            13
+            %size_large%
           ]
         ]
       },
@@ -153,7 +153,7 @@
       ]
     ],
     "layout": {
-      "text-size": 10,
+      "text-size": %size_small%,
       "icon-image": "road_{ref_length}",
       "icon-rotation-alignment": "viewport",
       "symbol-spacing": 200,
@@ -206,7 +206,7 @@
       ]
     ],
     "layout": {
-      "text-size": 10,
+      "text-size": %size_small%,
       "icon-image": "{network}_{ref_length}",
       "icon-rotation-alignment": "viewport",
       "symbol-spacing": 200,
@@ -264,7 +264,7 @@
       ]
     ],
     "layout": {
-      "text-size": 10,
+      "text-size": %size_small%,
       "icon-image": "{network}_{ref_length}",
       "icon-rotation-alignment": "viewport",
       "symbol-spacing": 200,

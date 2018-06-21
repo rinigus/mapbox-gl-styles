@@ -31,7 +31,7 @@
         0.6
       ],
       "text-optional": true,
-      "text-size": 12,
+      "text-size": %size_medium%,
       "text-max-width": 9
     },
     "paint": {
@@ -81,7 +81,7 @@
         0.6
       ],
       "text-optional": true,
-      "text-size": 12,
+      "text-size": %size_medium%,
       "text-max-width": 9
     },
     "paint": {
@@ -130,7 +130,7 @@
         0.6
       ],
       "text-optional": true,
-      "text-size": 12,
+      "text-size": %size_medium%,
       "text-max-width": 9
     },
     "paint": {

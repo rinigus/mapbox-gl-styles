@@ -10,7 +10,7 @@
       "text-font": [
         "Noto Sans Italic"
       ],
-      "text-size": 10,
+      "text-size": %size_small%,
       "icon-optional": true
     },
     "paint": {
@@ -28,7 +28,7 @@
       "text-font": [
         "Noto Sans Italic"
       ],
-      "text-size": 10,
+        "text-size": %size_small%,
       "icon-optional": true
     },
     "paint": {
