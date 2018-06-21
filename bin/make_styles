@@ -4,7 +4,7 @@ set -e
 
 PROGPATH=$(dirname "$0")
 
-for i in osmbright osmbright-en osmbright-car mc mc-en; do
+for i in osmbright osmbright-en osmbright-car osmbright-car-en mc mc-en mc-car mc-car-en; do
   echo "Generating" $i
   $PROGPATH/styler $PROGPATH/../styles/src/$i $PROGPATH/../styles --data-hosturl="http://HOSTNAMEPORT"
 done
