@@ -16,7 +16,7 @@ set distributed by OpenMapTiles with OSM Bright Style
 To regenerate sprite set, install `spritezero-cli`:
 
 ```
-npm install -g @mapbox/spritezero-cli
+npm install @mapbox/spritezero-cli
 ```
 
 Generate sprites (used ratio 4):

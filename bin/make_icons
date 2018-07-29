@@ -3,6 +3,7 @@
 set -e
 
 export PROGPATH=$(dirname "$0")
+export PATH=$PROGPATH/../node_modules/.bin:$PATH
 
 color_icons () {
   echo "Generating" $3

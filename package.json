@@ -6,9 +6,10 @@
   "author": "rinigus https://github.com/rinigus",
   "license": "GPL",
   "dependencies": {
+    "@mapbox/spritezero-cli": "^2.1.0",
     "json": "^9.0.6",
-    "less": "^2.7.3",
+    "less": "^3.8.0",
     "less-plugin-variables-output": "^1.2.0",
-    "variable-replacer": "^1.5.1"
+    "variable-replacer": "^1.6.0"
   }
 }
