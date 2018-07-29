@@ -9,6 +9,7 @@
 ../layers/boundary.json
 ../layers/water-name.json
 ../layers/poi.json
+../layers/highway-oneway.json
 ../layers/highway-name.json
 ../layers/aerodrome.json
 ../layers/place.json

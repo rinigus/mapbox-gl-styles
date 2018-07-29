@@ -11,6 +11,7 @@
 ../layers/poi.json
 ../layers/transport.json
 ../layers/car.json
+../layers/highway-oneway.json
 ../layers/highway-name.json
 ../layers/aerodrome.json
 ../layers/place.json
