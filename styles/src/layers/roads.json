@@ -548,6 +548,32 @@
     }
   },
   {
+      "id": "ferry",
+      "type": "line",
+      "source": "%source%",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        [
+          "in",
+          "class",
+          "ferry"
+        ]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "%water_text%",
+        "line-width": 1.1,
+        "line-dasharray": [
+          2,
+          2
+        ]
+      }
+  },
+  {
     "id": "aeroway-taxiway-casing",
     "type": "line",
     "source": "%source%",

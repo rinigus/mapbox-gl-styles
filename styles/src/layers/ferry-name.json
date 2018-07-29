@@ -1,0 +1,40 @@
+[
+  {
+    "id": "ferry-name",
+    "type": "symbol",
+    "source": "%source%",
+    "source-layer": "ferry_name",
+    "minzoom": 12.2,
+    "filter": [
+      "==",
+      "class",
+      "ferry"
+    ],
+    "layout": {
+      "text-size": {
+        "base": 1,
+        "stops": [
+          [
+            13,
+            %size_medium%
+          ],
+          [
+            14,
+            %size_large%
+          ]
+        ]
+      },
+      "text-font": [
+        "Noto Sans Regular"
+      ],
+      "text-field": "{%name%}",
+      "symbol-placement": "line",
+      "text-rotation-alignment": "map"
+    },
+    "paint": {
+      "text-halo-color": "%water_halo%",
+      "text-color": "%water_text%",
+      "text-halo-width": 1
+    }
+  }
+]

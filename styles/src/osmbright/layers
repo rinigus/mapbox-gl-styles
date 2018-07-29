@@ -11,6 +11,7 @@
 ../layers/poi.json
 ../layers/highway-oneway.json
 ../layers/highway-name.json
+../layers/ferry-name.json
 ../layers/aerodrome.json
 ../layers/place.json
 ../layers/housenamenumber.json
