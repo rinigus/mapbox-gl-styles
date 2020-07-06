@@ -1,5 +1,26 @@
 [
   {
+    "id": "building-outline",
+    "type": "line",
+    "source": "%source%",
+    "source-layer": "building",
+    "paint": {
+      "line-width": 2,
+      "line-opacity": {
+        "stops": [
+          [13, 0],
+          [15, 1]
+        ]
+      },
+      "line-color": {
+        "stops": [
+          [14, "%building_border_zoom_low%"],
+          [16, "%building_border_zoom_high%"]
+        ]
+      }
+    }
+  },
+  {
     "id": "building",
     "type": "fill",
     "source": "%source%",
@@ -10,12 +31,6 @@
         "stops": [
           [13, 0],
           [15, 1]
-        ]
-      },
-      "fill-outline-color": {
-        "stops": [
-          [14, "%building_border_zoom_low%"],
-          [16, "%building_border_zoom_high%"]
         ]
       },
       "fill-antialias": true
