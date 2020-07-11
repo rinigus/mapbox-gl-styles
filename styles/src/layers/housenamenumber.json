@@ -22,7 +22,7 @@
     "type": "symbol",
     "source": "%source%",
     "source-layer": "housenumber",
-    "minzoom": 18,
+    "minzoom": 17,
     "layout": {
       "text-field": "{housenumber}",
       "text-font": [
