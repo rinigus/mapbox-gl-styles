@@ -8,14 +8,14 @@
       "line-width": 2,
       "line-opacity": {
         "stops": [
-          [13, 0],
-          [15, 1]
+          [14, 0],
+          [14.5, 1]
         ]
       },
       "line-color": {
         "stops": [
           [14, "%building_border_zoom_low%"],
-          [16, "%building_border_zoom_high%"]
+          [15, "%building_border_zoom_high%"]
         ]
       }
     }
@@ -29,8 +29,8 @@
       "fill-color": "%building%",
       "fill-opacity": {
         "stops": [
-          [13, 0],
-          [15, 1]
+          [14, 0],
+          [14.5, 1]
         ]
       },
       "fill-antialias": true
