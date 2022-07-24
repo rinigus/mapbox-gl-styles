@@ -60,3 +60,8 @@ will generate Mapbox GL style compatible with OSM Scout Server where `hosturl` v
 variable values cannot contain `:` symbol.
 
 Script `bin/make_styles` allows to regenerate all supported styles for OSM Scout Server.
+
+
+# Testing
+
+It is possible to test developed styles using `maptiler/tileserver-gl` Docker image. After generation of the styles, run `bin/tileserver` with MBTiles file as an argument. It will pick up all styles in `styles` subfolder, use sprites in `sprites`, pull Docker image and serve the maps via it. Port can be specified via `--port` option.

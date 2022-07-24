@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+
+import argparse
+import glob
+import json
+import subprocess
+
+from pathlib import Path
+
+## MAIN ##
+parser = argparse.ArgumentParser(description='Serve maps with the created styles using Tileserver GL')
+
+parser.add_argument('mbtiles', help='MBTiles filename')
+parser.add_argument('--port', type=int, default=8080, help='Local TCP/IP port')
+
+args = parser.parse_args()
+
+tiledir = 'tileserver'
+mbtiles = Path(args.mbtiles)
+mbtiles_dir = str(mbtiles.parent.resolve())
+mbtiles_file = mbtiles.name
+port = args.port
+
+# init docker command
+cmd = "docker run --rm -it".split()
+cmd.extend(['-v', f'{mbtiles_dir}:/data'])
+cmd.extend(['-v', str(Path('sprites').resolve()) + ':/app/node_modules/tileserver-gl-styles/sprites'])
+
+# convert styles
+(Path(tiledir) / 'styles').mkdir(parents=True, exist_ok=True)
+
+for i in glob.glob('styles/*.json'):
+    name = Path(Path(i).name).stem
+    style = json.load(open(i, 'r'))
+
+    style['sprite'] = 'sprites/' + style['sprite'].split('/')[-1]
+    style['glyphs'] = '{fontstack}/{range}'
+    style['sources']['osmscout'] = dict( type='vector',
+                                         url='mbtiles://{v3}' )
+
+    sdir = Path(tiledir) / 'styles' / name
+    sdir.mkdir(parents=True, exist_ok=True)
+    json.dump(style, open(sdir / 'style.json', 'w'),
+              indent=4)
+
+    cmd.extend(['-v', str(sdir.resolve()) + ':/app/node_modules/tileserver-gl-styles/styles/' + name])
+
+cmd.extend(f'-p {port}:{port} maptiler/tileserver-gl --mbtiles {mbtiles_file} -p {port}'.split())
+print(' '.join(cmd))
+
+subprocess.run(cmd)
+
