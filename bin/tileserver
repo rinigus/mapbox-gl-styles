@@ -11,7 +11,8 @@ from pathlib import Path
 parser = argparse.ArgumentParser(description='Serve maps with the created styles using Tileserver GL')
 
 parser.add_argument('mbtiles', help='MBTiles filename')
-parser.add_argument('--port', type=int, default=8080, help='Local TCP/IP port')
+parser.add_argument('--port', type=int, default=8080, help='Local TCP/IP port, default 8080')
+parser.add_argument('--glyphs', default=None, help='Optional font glyphs directory')
 
 args = parser.parse_args()
 
@@ -25,6 +26,8 @@ port = args.port
 cmd = "docker run --rm -it".split()
 cmd.extend(['-v', f'{mbtiles_dir}:/data'])
 cmd.extend(['-v', str(Path('sprites').resolve()) + ':/app/node_modules/tileserver-gl-styles/sprites'])
+if args.glyphs is not None:
+    cmd.extend(['-v', str(Path(args.glyphs).resolve()) + ':/app/node_modules/tileserver-gl-styles/fonts'])
 
 # convert styles
 (Path(tiledir) / 'styles').mkdir(parents=True, exist_ok=True)
