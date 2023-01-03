@@ -6,6 +6,17 @@ scripts from https://github.com/rinigus/mapbox-gl-importer . See [README.md](htt
 for description of the tile schema.
 
 
+# Support packages
+
+As spritezero is supported in Node.js version 8, install [nvm](https://github.com/nvm-sh/nvm) and use it to get correct packages installed:
+```
+nvm install 8
+nvm use 8
+npm install
+```
+
+This is needed for generation of sprites and styles.
+
 # Sprites
 
 Icons are based on
