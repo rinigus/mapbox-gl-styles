@@ -25,9 +25,9 @@ port = args.port
 # init docker command
 cmd = "docker run --rm -it".split()
 cmd.extend(['-v', f'{mbtiles_dir}:/data'])
-cmd.extend(['-v', str(Path('sprites').resolve()) + ':/app/node_modules/tileserver-gl-styles/sprites'])
+cmd.extend(['-v', str(Path('sprites').resolve()) + ':/usr/src/app/node_modules/tileserver-gl-styles/sprites'])
 if args.glyphs is not None:
-    cmd.extend(['-v', str(Path(args.glyphs).resolve()) + ':/app/node_modules/tileserver-gl-styles/fonts'])
+    cmd.extend(['-v', str(Path(args.glyphs).resolve()) + ':/usr/src/app/node_modules/tileserver-gl-styles/fonts'])
 
 # convert styles
 (Path(tiledir) / 'styles').mkdir(parents=True, exist_ok=True)
@@ -46,7 +46,7 @@ for i in glob.glob('styles/*.json'):
     json.dump(style, open(sdir / 'style.json', 'w'),
               indent=4)
 
-    cmd.extend(['-v', str(sdir.resolve()) + ':/app/node_modules/tileserver-gl-styles/styles/' + name])
+    cmd.extend(['-v', str(sdir.resolve()) + ':/usr/src/app/node_modules/tileserver-gl-styles/styles/' + name])
 
 cmd.extend(f'-p {port}:{port} maptiler/tileserver-gl --mbtiles {mbtiles_file} -p {port}'.split())
 print(' '.join(cmd))
