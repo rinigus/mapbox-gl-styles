@@ -1,16 +1,45 @@
 [
     {
-        "id": "poi",
+        "id": "poi-without-name",
         "type": "symbol",
         "source": "%source%",
         "source-layer": "poi",
-        "minzoom": 13,
+	"min-zoom": 14,
         "filter": [
-            "all",
-            ["<",
-             ["number", ["get", "local_rank"], 4000],
-             ["*", 5, ["^", 4, ["max", ["-", ["zoom"], 13], 1]]]
-            ]
+	    "all",
+	    ["!", ["has", "name"]],
+            ["any",
+	     [">", ["zoom"], 17],
+             ["<=",
+              ["number", ["get", "rank"], 100],
+              ["^", 4, ["-", ["zoom"], 14]]
+             ]
+	    ]
+        ],
+        "layout": {
+            "icon-image": ["coalesce",
+			   ["image", ["concat", ["get", "class"], "_", ["get", "subclass"], "-11"]],
+			   ["image", ["concat", ["get", "subclass"], "-11"]],
+			   ["image", ["concat", ["get", "class"], "-11"]],
+			   ["image", "dot-11"]]
+        }
+    },
+    {
+        "id": "poi-with-name",
+        "type": "symbol",
+        "source": "%source%",
+        "source-layer": "poi",
+	"min-zoom": 14,
+        "filter": [
+	    "all",
+	    ["has", "name"],
+            ["any",
+	     [">", ["zoom"], 17],
+             ["<=",
+              ["number", ["get", "rank"], 100],
+              ["^", 4, ["-", ["zoom"], 14]]
+             ]
+	    ]
         ],
         "layout": {
             "text-padding": 2,
@@ -18,7 +47,11 @@
                 "Noto Sans Bold"
             ],
             "text-anchor": "top",
-            "icon-image": "{symbol}-11",
+            "icon-image": ["coalesce",
+			   ["image", ["concat", ["get", "class"], "_", ["get", "subclass"], "-11"]],
+			   ["image", ["concat", ["get", "subclass"], "-11"]],
+			   ["image", ["concat", ["get", "class"], "-11"]],
+			   ["image", "dot-11"]],
             "text-field": "{%name%}",
             "text-offset": [
                 0,
