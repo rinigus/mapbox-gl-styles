@@ -3,11 +3,13 @@
     "id": "place-continent",
     "type": "symbol",
     "source": "%source%",
-    "source-layer": "place_continent",
+    "source-layer": "place",
     "minzoom": 0,
     "maxzoom": 4,
     "filter": [
-      "all"
+	"==",
+	"class",
+	"continent"
     ],
     "layout": {
       "text-font": [
@@ -29,10 +31,12 @@
     "id": "place-country",
     "type": "symbol",
     "source": "%source%",
-    "source-layer": "place_country",
+    "source-layer": "place",
     "maxzoom": 10,
     "filter": [
-      "all"
+	"==",
+	"class",
+	"country"
     ],
     "layout": {
       "text-font": [
@@ -71,11 +75,13 @@
     "id": "place-state",
     "type": "symbol",
     "source": "%source%",
-    "source-layer": "place_state",
+    "source-layer": "place",
     "minzoom": 5,
     "maxzoom": 8,
     "filter": [
-      "all"
+	"==",
+	"class",
+	"state"
     ],
     "layout": {
       "text-font": [
@@ -107,11 +113,13 @@
     "id": "place-city-capital",
     "type": "symbol",
     "source": "%source%",
-    "source-layer": "place_capital",
+    "source-layer": "place",
     "minzoom": 0,
-    "maxzoom": 11,
+    "maxzoom": 12,
     "filter": [
-      "all"
+	"all",
+	["==", "capital", 2],
+	["==", "class", "city"]
     ],
     "layout": {
       "text-font": [
@@ -144,11 +152,13 @@
     "id": "place-island",
     "type": "symbol",
     "source": "%source%",
-    "source-layer": "place_island",
+    "source-layer": "place",
     "minzoom": 8,
     "maxzoom": 16,
     "filter": [
-      "all"
+	"==",
+	"class",
+	"island"
     ],
     "layout": {
       "text-font": [
@@ -180,11 +190,13 @@
     "id": "place-city",
     "type": "symbol",
     "source": "%source%",
-    "source-layer": "place_city",
+    "source-layer": "place",
     "minzoom": 8,
     "maxzoom": 12,
     "filter": [
-      "all"
+	"all",
+	["!=", "capital", 2],
+	["==", "class", "city"]
     ],
     "layout": {
       "text-font": [
@@ -216,11 +228,13 @@
     "id": "place-town",
     "type": "symbol",
     "source": "%source%",
-    "source-layer": "place_town",
+    "source-layer": "place",
     "minzoom": 9,
     "maxzoom": 13,
     "filter": [
-      "all"
+	"==",
+	"class",
+	"town"
     ],
     "layout": {
       "text-font": [
@@ -252,11 +266,13 @@
     "id": "place-village",
     "type": "symbol",
     "source": "%source%",
-    "source-layer": "place_village",
+    "source-layer": "place",
     "minzoom": 10,
     "maxzoom": 17,
     "filter": [
-      "all"
+	"==",
+	"class",
+	"village"
     ],
     "layout": {
       "text-font": [
@@ -289,9 +305,17 @@
     "minzoom": 11,
     "type": "symbol",
     "source": "%source%",
-    "source-layer": "place_other",
+    "source-layer": "place",
     "filter": [
-      "all"
+	"!in",
+	"class",
+	"continent",
+	"country",
+	"state",
+	"city",
+	"island",
+	"town",
+	"village"
     ],
     "layout": {
       "text-letter-spacing": 0.1,
