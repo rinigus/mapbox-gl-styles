@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 11 11"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="bollard-11.svg"
+   width="11"
+   height="11"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="15.733333"
+     inkscape:cx="-2.7648305"
+     inkscape:cy="7.5"
+     inkscape:window-width="2560"
+     inkscape:window-height="1371"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     d="M 7.3333333,2.2 H 3.6666666 V 1.8333333 C 3.6666666,0.82133333 4.4879999,0 5.4999999,0 c 1.012,0 1.8333334,0.82133333 1.8333334,1.8333333 z m 0,1.4666667 V 11 H 3.6666666 V 3.6666667 Z"
+     id="path2"
+     style="stroke-width:0.733333" />
+</svg>
