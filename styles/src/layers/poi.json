@@ -1,45 +1,17 @@
 [
     {
-        "id": "poi-without-name",
+        "id": "poi",
         "type": "symbol",
         "source": "%source%",
         "source-layer": "poi",
-	"min-zoom": 14,
+	"minzoom": 14,
         "filter": [
-	    "all",
-	    ["!", ["has", "name"]],
-            ["any",
-	     [">", ["zoom"], 17],
-             ["<=",
-              ["number", ["get", "rank"], 100],
-              ["^", 4, ["-", ["zoom"], 14]]
-             ]
-	    ]
-        ],
-        "layout": {
-            "icon-image": ["coalesce",
-			   ["image", ["concat", ["get", "class"], "_", ["get", "subclass"], "-11"]],
-			   ["image", ["concat", ["get", "subclass"], "-11"]],
-			   ["image", ["concat", ["get", "class"], "-11"]],
-			   ["image", "dot-11"]]
-        }
-    },
-    {
-        "id": "poi-with-name",
-        "type": "symbol",
-        "source": "%source%",
-        "source-layer": "poi",
-	"min-zoom": 14,
-        "filter": [
-	    "all",
-	    ["has", "name"],
-            ["any",
-	     [">", ["zoom"], 17],
-             ["<=",
-              ["number", ["get", "rank"], 100],
-              ["^", 4, ["-", ["zoom"], 14]]
-             ]
-	    ]
+            "any",
+	    [">", ["zoom"], 18],
+            ["<=",
+             ["number", ["get", "rank"], 100],
+             ["^", 4, ["-", ["zoom"], 14]]
+            ]
         ],
         "layout": {
             "text-padding": 2,
