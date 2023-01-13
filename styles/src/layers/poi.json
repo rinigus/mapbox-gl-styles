@@ -4,13 +4,13 @@
         "type": "symbol",
         "source": "%source%",
         "source-layer": "poi",
-	"minzoom": 14,
+	"minzoom": %poi_general_zref%,
         "filter": [
             "any",
 	    [">", ["zoom"], 18],
             ["<=",
              ["number", ["get", "rank"], 100],
-             ["^", 4, ["-", ["zoom"], 14]]
+             ["^", 4, ["-", ["zoom"], %poi_general_zref%]]
             ]
         ],
         "layout": {
