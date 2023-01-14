@@ -8,7 +8,9 @@
         "filter": [
 	    "in",
 	    "subclass",
-	    "parking"
+	    "parking",
+	    "gate",
+	    "lift_gate"
         ],
         "layout": {
             "text-padding": 2,
@@ -46,7 +48,13 @@
         "filter": [
 	    "in",
 	    "subclass",
-	    "fuel"
+	    "fuel",
+	    "charging_station",
+	    "border_control",
+	    "toll_booth",
+	    "ferry_terminal",
+	    "station",
+	    "halt"
         ],
         "layout": {
             "text-padding": 2,
