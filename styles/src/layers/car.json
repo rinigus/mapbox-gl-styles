@@ -1,16 +1,19 @@
 [
     {
-        "id": "car-poi-z16",
+        "id": "car-poi-low-zoom",
         "type": "symbol",
         "source": "%source%",
         "source-layer": "poi",
-	"minzoom": 16,
         "filter": [
 	    "in",
 	    "subclass",
-	    "parking",
-	    "gate",
-	    "lift_gate"
+	    "fuel",
+	    "charging_station",
+	    "border_control",
+	    "toll_booth",
+	    "ferry_terminal",
+	    "station",
+	    "halt"
         ],
         "layout": {
             "text-padding": 2,
@@ -40,21 +43,17 @@
         }
     },
     {
-        "id": "car-poi-z14",
+        "id": "car-poi-z16",
         "type": "symbol",
         "source": "%source%",
         "source-layer": "poi",
-	"minzoom": 14,
+	"minzoom": 16,
         "filter": [
 	    "in",
 	    "subclass",
-	    "fuel",
-	    "charging_station",
-	    "border_control",
-	    "toll_booth",
-	    "ferry_terminal",
-	    "station",
-	    "halt"
+	    "parking",
+	    "gate",
+	    "lift_gate"
         ],
         "layout": {
             "text-padding": 2,
