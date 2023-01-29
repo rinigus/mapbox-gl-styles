@@ -4,7 +4,7 @@
     "type": "symbol",
     "source": "%source%",
     "source-layer": "housename",
-    "minzoom": 15,
+    "minzoom": 17,
     "layout": {
       "text-field": "{housename}",
       "text-font": [
